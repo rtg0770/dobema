@@ -1,0 +1,130 @@
+.main-links ul {
+    right: 0px;
+    background-color: $graybglight;
+    margin-top: $m;
+    list-style-type: none;
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    > li {
+        padding: $l $m;
+    }
+}
+.products-sub, .products-sub {
+    display: none !important;
+    color: red;
+}
+
+nav {
+    background-color: $graybglight;
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    padding: 16px;
+    height: 4 * $xl;
+    > div.logo {padding-top: 8px;}
+    > menu {padding-top: $s;}
+}
+
+.small > .logo > img {
+    height: 70px;
+    width: auto;
+}
+menu {
+    font-size: 1.5rem;
+}
+menu.internalAnchors {
+    font-size: 1rem; 
+}
+.small > menu {
+    font-size: 1rem;
+}
+
+.active {color: red}
+
+button {
+    cursor: pointer;
+}
+a.link {
+    cursor: pointer;
+}
+
+
+.internalAnchors {
+   cursor: pointer;
+    > ul {margin-left: $m;}
+    > ul li {
+        padding: $m $l;
+        list-style-type: none;
+    }
+
+    > ul li:hover {
+        list-style-image: url(pointon.png);
+        list-style-position: outside;
+    }
+
+    > ul li a {
+        display: block;
+        padding: $s $l;
+        margin-top: 0;
+        line-height: 2rem;
+    }
+
+    
+
+}
+
+
+
+.cards-col {
+    width: 75vw;
+    left: $xl;
+}
+
+.cardsbricks {
+    margin-top: $xl;
+    > img {max-width: 373px;};
+
+    background: #EFEEEE;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    box-shadow: 6px 6px 16px rgba(209, 205, 199, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+
+}
+
+.content {
+    display: grid;
+    
+    grid-template-columns: 6fr 2fr;
+    grid-template-areas: content menu;
+    
+    > .cardsbricks {
+        grid-area: content;
+    }
+
+    > .internalAnchors {
+        grid-area: menu;
+        top: 5 * $xl;
+        right: $xl;
+        position: fixed;
+        > ul {
+            list-style-position: unset;
+            text-indent: unset;
+        }
+    }
+}
+
+button {
+background: #EFEEEE;
+border: 1px solid rgba(255, 255, 255, 0.2);
+box-sizing: border-box;
+box-shadow: 6px 6px 16px rgba(209, 205, 199, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
+border-radius: 8px;
+
+padding: $m $l;
+}

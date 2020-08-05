@@ -1,0 +1,12 @@
+@import "_variables";
+@import "_divy";
+@import "_layout";
+
+body {
+    background-color: $graybglight;
+}
+
+img {
+    max-width: 70vw;
+    height: auto;
+}

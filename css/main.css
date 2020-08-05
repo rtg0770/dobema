@@ -1,0 +1,150 @@
+.main-links ul {
+  right: 0px;
+  background-color: #efeeee;
+  margin-top: 8px;
+  list-style-type: none;
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: space-between; }
+  .main-links ul > li {
+    padding: 24px 8px; }
+
+.products-sub, .products-sub {
+  display: none !important;
+  color: red; }
+
+nav {
+  background-color: #efeeee;
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  padding: 16px;
+  height: 128px; }
+  nav > div.logo {
+    padding-top: 8px; }
+  nav > menu {
+    padding-top: 4px; }
+
+.small > .logo > img {
+  height: 70px;
+  width: auto; }
+
+menu {
+  font-size: 1.5rem; }
+
+menu.internalAnchors {
+  font-size: 1rem; }
+
+.small > menu {
+  font-size: 1rem; }
+
+.active {
+  color: red; }
+
+button {
+  cursor: pointer; }
+
+a.link {
+  cursor: pointer; }
+
+.internalAnchors {
+  cursor: pointer; }
+  .internalAnchors > ul {
+    margin-left: 8px; }
+  .internalAnchors > ul li {
+    padding: 8px 24px;
+    list-style-type: none; }
+  .internalAnchors > ul li:hover {
+    list-style-image: url(pointon.png);
+    list-style-position: outside; }
+  .internalAnchors > ul li a {
+    display: block;
+    padding: 4px 24px;
+    margin-top: 0;
+    line-height: 2rem; }
+
+.cards-col {
+  width: 75vw;
+  left: 32px; }
+
+.cardsbricks {
+  margin-top: 32px;
+  background: #EFEEEE;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+  box-shadow: 6px 6px 16px rgba(209, 205, 199, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
+  border-radius: 8px; }
+  .cardsbricks > img {
+    max-width: 373px; }
+
+.content {
+  display: grid;
+  grid-template-columns: 6fr 2fr;
+  grid-template-areas: content menu; }
+  .content > .cardsbricks {
+    grid-area: content; }
+  .content > .internalAnchors {
+    grid-area: menu;
+    top: 160px;
+    right: 32px;
+    position: fixed; }
+    .content > .internalAnchors > ul {
+      list-style-position: unset;
+      text-indent: unset; }
+
+button {
+  background: #EFEEEE;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+  box-shadow: 6px 6px 16px rgba(209, 205, 199, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  padding: 8px 24px; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  margin: 0; }
+
+menu {
+  margin: 0em; }
+
+#wrapper {
+  padding: 160px 24px; }
+
+#wrapper.topShrinked {
+  padding: 128px 24px; }
+
+h1 {
+  display: block;
+  width: 100%;
+  position: fixed;
+  margin-top: unset;
+  margin-top: -5px;
+  padding: 8px 32px;
+  background-image: linear-gradient(to right, #efeeee, rgba(239, 238, 238, 0)); }
+
+.cardsbricks {
+  display: block;
+  float: left;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 32px;
+  padding-right: 32px; }
+  .cardsbricks > img {
+    width: 40%;
+    float: left; }
+  .cardsbricks > .desc {
+    width: 60%;
+    float: right; }
+
+body {
+  background-color: #efeeee; }
+
+img {
+  max-width: 70vw;
+  height: auto; }

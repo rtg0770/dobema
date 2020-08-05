@@ -1,0 +1,42 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+menu {
+    margin: 0em;
+}
+#wrapper {
+    padding: 5*$xl 24px;
+}
+#wrapper.topShrinked {
+    padding: 128px 24px;
+}
+h1 {
+    display: block;
+    width: 100%;
+    position: fixed;
+    margin-top: unset;
+    margin-top: -5px;
+    padding: $m $xl;
+    background-image: linear-gradient(to right, rgba(239,238,238,1), rgba(239,238,238,0));
+}
+.cardsbricks {
+    display: block;
+    float: left;
+    padding-top: 1.5 * $xl;
+    padding-bottom: 1.5 * $xl;
+    padding-left: $xl;
+    padding-right: $xl;
+    > img {
+        width: 40%;
+        float: left;
+    }
+    > .desc {
+        width: 60%;
+        float: right;
+    }
+
+}
