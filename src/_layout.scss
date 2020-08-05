@@ -1,42 +1,79 @@
 html {
     scroll-behavior: smooth;
 }
-
 body {
     margin: 0;
 }
 menu {
-    margin: 0em;
+    margin: 0;
 }
 #wrapper {
-    padding: 5*$xl 24px;
+    padding: 5*$xl $l;
 }
 #wrapper.topShrinked {
-    padding: 128px 24px;
+    padding: 128px $l;
 }
-h1 {
-    display: block;
-    width: 100%;
-    position: fixed;
-    margin-top: unset;
-    margin-top: -5px;
-    padding: $m $xl;
-    background-image: linear-gradient(to right, rgba(239,238,238,1), rgba(239,238,238,0));
+
+.cards-col {
+    
+    @include respond-to(small) {
+        width: 100vw;
+    }
+    @include respond-to(medium) {
+        width: 75vw;
+    }
+    @include respond-to(large) {
+        width: 75vw;
+    }
 }
+.internalAnchors {
+    @include respond-to(small) {
+        width: 100vw;
+    }
+    @include respond-to(medium) {
+        width: 25vw;
+        float: right;
+        position: fixed;
+        right: 0;
+        top: 200px;
+    }
+    @include respond-to(large) {
+        width: 25vw;
+        float: right;
+        position: fixed;
+        right: 0;
+        top: 200px;
+    }
+}
+
 .cardsbricks {
     display: block;
+    width: 100%;
+}
+.prodimg {
+    display: block;
+    mix-blend-mode: darken;
     float: left;
-    padding-top: 1.5 * $xl;
-    padding-bottom: 1.5 * $xl;
-    padding-left: $xl;
-    padding-right: $xl;
-    > img {
-        width: 40%;
-        float: left;
-    }
-    > .desc {
-        width: 60%;
-        float: right;
-    }
 
+@include respond-to(small) {
+    width: 100%;
+}
+@include respond-to(medium) {
+    width: 40%;
+}
+@include respond-to(large) {
+    width: 40%;
+}
+}
+.desc {
+    display: inline-block;
+    @include respond-to(small) {
+        width: 100%;
+    }
+    @include respond-to(medium) {
+        width: 55%;
+    }
+    @include respond-to(large) {
+        width: 55%;
+    }
 }

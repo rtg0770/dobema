@@ -1,12 +1,6 @@
 @import "_variables";
+@import "_mixins";
+@import "_atoms";
 @import "_divy";
 @import "_layout";
-
-body {
-    background-color: $graybglight;
-}
-
-img {
-    max-width: 70vw;
-    height: auto;
-}
+@import "_typography";

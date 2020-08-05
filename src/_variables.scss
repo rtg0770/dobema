@@ -1,6 +1,19 @@
 $graybglight: rgb(239, 238, 238);
+$grayfontdark: #212121;
+$active: #1DB954;
+
 $s: 4px;
 $m: 8px;
 $l: 24px;
 $xl: 32px;
 $xxl: 64px;
+
+$breakpoints: (
+  'small':  767px,
+  'medium': 992px,
+  'large':  1200px
+) !default;
+
+body {
+    color: $grayfontdark;
+    background-color: $graybglight;}

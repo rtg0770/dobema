@@ -1,3 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Roboto&display=swap");
+body {
+  color: #212121;
+  background-color: #efeeee; }
+
+button {
+  background: #EFEEEE;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+  box-shadow: 6px 6px 16px rgba(209, 205, 199, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  padding: 8px 24px; }
+
+.small > .logo > img {
+  height: 70px;
+  width: auto; }
+
+.active {
+  color: #1DB954; }
+
+button {
+  cursor: pointer; }
+
+a.link {
+  cursor: pointer; }
+
+a.link:hover {
+  text-decoration: underline; }
+
+nav {
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 24px;
+  height: 128px; }
+  nav > div.logo {
+    padding-top: 8px; }
+  nav > menu {
+    padding-top: 4px; }
+
 .main-links ul {
   right: 0px;
   background-color: #efeeee;
@@ -10,28 +54,7 @@
     padding: 24px 8px; }
 
 .products-sub, .products-sub {
-  display: none !important;
-  color: red; }
-
-nav {
-  background-color: #efeeee;
-  display: inline-flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  position: fixed;
-  width: 100%;
-  top: 0px;
-  left: 0px;
-  padding: 16px;
-  height: 128px; }
-  nav > div.logo {
-    padding-top: 8px; }
-  nav > menu {
-    padding-top: 4px; }
-
-.small > .logo > img {
-  height: 70px;
-  width: auto; }
+  display: none !important; }
 
 menu {
   font-size: 1.5rem; }
@@ -41,15 +64,6 @@ menu.internalAnchors {
 
 .small > menu {
   font-size: 1rem; }
-
-.active {
-  color: red; }
-
-button {
-  cursor: pointer; }
-
-a.link {
-  cursor: pointer; }
 
 .internalAnchors {
   cursor: pointer; }
@@ -67,42 +81,13 @@ a.link {
     margin-top: 0;
     line-height: 2rem; }
 
-.cards-col {
-  width: 75vw;
-  left: 32px; }
-
 .cardsbricks {
-  margin-top: 32px;
+  margin-top: 64px;
   background: #EFEEEE;
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-sizing: border-box;
   box-shadow: 6px 6px 16px rgba(209, 205, 199, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
   border-radius: 8px; }
-  .cardsbricks > img {
-    max-width: 373px; }
-
-.content {
-  display: grid;
-  grid-template-columns: 6fr 2fr;
-  grid-template-areas: content menu; }
-  .content > .cardsbricks {
-    grid-area: content; }
-  .content > .internalAnchors {
-    grid-area: menu;
-    top: 160px;
-    right: 32px;
-    position: fixed; }
-    .content > .internalAnchors > ul {
-      list-style-position: unset;
-      text-indent: unset; }
-
-button {
-  background: #EFEEEE;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-sizing: border-box;
-  box-shadow: 6px 6px 16px rgba(209, 205, 199, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
-  border-radius: 8px;
-  padding: 8px 24px; }
 
 html {
   scroll-behavior: smooth; }
@@ -111,7 +96,7 @@ body {
   margin: 0; }
 
 menu {
-  margin: 0em; }
+  margin: 0; }
 
 #wrapper {
   padding: 160px 24px; }
@@ -119,32 +104,83 @@ menu {
 #wrapper.topShrinked {
   padding: 128px 24px; }
 
-h1 {
-  display: block;
-  width: 100%;
-  position: fixed;
-  margin-top: unset;
-  margin-top: -5px;
-  padding: 8px 32px;
-  background-image: linear-gradient(to right, #efeeee, rgba(239, 238, 238, 0)); }
+@media (min-width: 767px) {
+  .cards-col {
+    width: 100vw; } }
+
+@media (min-width: 992px) {
+  .cards-col {
+    width: 75vw; } }
+
+@media (min-width: 1200px) {
+  .cards-col {
+    width: 75vw; } }
+
+@media (min-width: 767px) {
+  .internalAnchors {
+    width: 100vw; } }
+
+@media (min-width: 992px) {
+  .internalAnchors {
+    width: 25vw;
+    float: right;
+    position: fixed;
+    right: 0;
+    top: 200px; } }
+
+@media (min-width: 1200px) {
+  .internalAnchors {
+    width: 25vw;
+    float: right;
+    position: fixed;
+    right: 0;
+    top: 200px; } }
 
 .cardsbricks {
   display: block;
-  float: left;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  padding-left: 32px;
-  padding-right: 32px; }
-  .cardsbricks > img {
-    width: 40%;
-    float: left; }
-  .cardsbricks > .desc {
-    width: 60%;
-    float: right; }
+  width: 100%; }
+
+.prodimg {
+  display: block;
+  mix-blend-mode: darken;
+  float: left; }
+  @media (min-width: 767px) {
+    .prodimg {
+      width: 100%; } }
+  @media (min-width: 992px) {
+    .prodimg {
+      width: 40%; } }
+  @media (min-width: 1200px) {
+    .prodimg {
+      width: 40%; } }
+
+.desc {
+  display: inline-block; }
+  @media (min-width: 767px) {
+    .desc {
+      width: 100%; } }
+  @media (min-width: 992px) {
+    .desc {
+      width: 55%; } }
+  @media (min-width: 1200px) {
+    .desc {
+      width: 55%; } }
 
 body {
-  background-color: #efeeee; }
+  font-family: 'Roboto', sans-serif; }
 
-img {
-  max-width: 70vw;
-  height: auto; }
+h1, h2, h3, h4 {
+  font-family: 'Cairo', sans-serif; }
+
+h1 {
+  display: block;
+  padding: 8px 32px;
+  position: fixed;
+  background-image: linear-gradient(to right, #efeeee, rgba(239, 238, 238, 0)); }
+
+p {
+  text-align: justify;
+  line-height: 1.5rem; }
+
+.desc ul li {
+  line-height: 2rem; }
