@@ -12,6 +12,10 @@ padding: $m $l;
     width: auto;
 }
 
+.logo > img {
+    mix-blend-mode: darken;
+}
+
 .active {color: $active}
 
 button {

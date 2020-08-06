@@ -15,6 +15,9 @@ button {
   height: 70px;
   width: auto; }
 
+.logo > img {
+  mix-blend-mode: darken; }
+
 .active {
   color: #1DB954; }
 
@@ -44,12 +47,15 @@ nav {
   nav > div.logo {
     padding-top: 8px; }
   nav > menu {
-    margin-right: 32px;
-    padding-top: 4px; }
+    background-image: url("../assets/img/bg3.png");
+    background-repeat: repeat;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    box-shadow: 6px 6px 16px rgba(209, 205, 199, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    margin-right: 64px; }
 
 .main-links ul {
-  right: 0px;
-  background-color: #efeeee;
   margin-top: 8px;
   list-style-type: none;
   display: inline-flex;
@@ -57,7 +63,7 @@ nav {
   justify-content: space-between; }
   .main-links ul > li {
     position: relative;
-    padding: 24px 8px; }
+    padding: 8px 24px; }
 
 .products-sub, .products-sub {
   display: none; }
@@ -89,7 +95,8 @@ menu.internalAnchors {
 
 .cardsbricks {
   margin-top: 64px;
-  background: #EFEEEE;
+  background-image: url("../assets/img/bg3.png");
+  background-repeat: repeat;
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-sizing: border-box;
   box-shadow: 6px 6px 16px rgba(209, 205, 199, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
@@ -104,7 +111,9 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  background-image: url("../assets/img/bg3.png");
+  background-repeat: repeat; }
 
 menu {
   margin: 0; }
@@ -178,14 +187,15 @@ menu {
     .desc {
       width: 55%; } }
 
-body {
-  font-family: 'Roboto', sans-serif; }
-
 h1, h2, h3, h4 {
   font-family: 'Cairo', sans-serif; }
 
 h1 {
-  display: block; }
+  display: block;
+  padding-left: 405px; }
+
+p, ul, .link, strong {
+  font-family: 'Roboto', sans-serif; }
 
 p {
   text-align: justify;

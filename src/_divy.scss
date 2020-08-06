@@ -11,12 +11,16 @@ nav {
     
     > div.logo {padding-top: 8px;}
     > menu {
-        margin-right: $xl;
-        padding-top: $s;}
+        background-image: url("../assets/img/bg3.png");
+        background-repeat: repeat;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-sizing: border-box;
+        box-shadow: 6px 6px 16px rgba(209, 205, 199, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
+        border-radius: 8px;
+        margin-right: $xxl;
+    }
 }
 .main-links ul {
-    right: 0px;
-    background-color: $graybglight;
     margin-top: $m;
     list-style-type: none;
     display: inline-flex;
@@ -24,7 +28,7 @@ nav {
     justify-content: space-between;
     > li {
         position: relative;
-        padding: $l $m;
+        padding: $m $l;
     }
     
 }
@@ -65,7 +69,9 @@ menu.internalAnchors {
 
 .cardsbricks {
     margin-top: 2*$xl;
-    background: #EFEEEE;
+    //background: #EFEEEE;
+    background-image: url("../assets/img/bg3.png");
+    background-repeat: repeat;
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-sizing: border-box;
     box-shadow: 6px 6px 16px rgba(209, 205, 199, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
