@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Roboto&display=swap");
 body {
-  color: #212121;
+  color: #6d6d6c;
   background-color: #efeeee; }
 
 button {
@@ -19,13 +19,13 @@ button {
   mix-blend-mode: darken; }
 
 .active {
-  color: #1DB954; }
+  color: #212121; }
 
 button {
   cursor: pointer; }
 
 a {
-  color: #212121;
+  color: #6d6d6c;
   text-decoration: none; }
 
 a.link {
@@ -43,9 +43,7 @@ nav {
   top: 0;
   left: 0;
   padding: 24px;
-  height: 128px; }
-  nav > div.logo {
-    padding-top: 8px; }
+  height: 96px; }
   nav > menu {
     background-image: url("../assets/img/bg3.png");
     background-repeat: repeat;
@@ -56,14 +54,13 @@ nav {
     margin-right: 64px; }
 
 .main-links ul {
-  margin-top: 8px;
   list-style-type: none;
   display: inline-flex;
   align-items: flex-start;
   justify-content: space-between; }
   .main-links ul > li {
     position: relative;
-    padding: 8px 24px; }
+    padding: 4px 24px 4px 24px; }
 
 .products-sub, .products-sub {
   display: none; }

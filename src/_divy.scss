@@ -6,10 +6,9 @@ nav {
     width: 100%;
     top: 0;
     left: 0;
-    padding: $lpx;
+    padding: $l;
     height: 3 * $xl;
     
-    > div.logo {padding-top: 8px;}
     > menu {
         background-image: url("../assets/img/bg3.png");
         background-repeat: repeat;
@@ -21,14 +20,14 @@ nav {
     }
 }
 .main-links ul {
-    margin-top: $m;
     list-style-type: none;
     display: inline-flex;
     align-items: flex-start;
     justify-content: space-between;
+    
     > li {
         position: relative;
-        padding: $m $l;
+        padding: $s $l $s $l;
     }
     
 }
