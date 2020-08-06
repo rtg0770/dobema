@@ -21,6 +21,10 @@ button {
 button {
   cursor: pointer; }
 
+a {
+  color: #212121;
+  text-decoration: none; }
+
 a.link {
   cursor: pointer; }
 
@@ -40,6 +44,7 @@ nav {
   nav > div.logo {
     padding-top: 8px; }
   nav > menu {
+    margin-right: 32px;
     padding-top: 4px; }
 
 .main-links ul {
@@ -51,10 +56,11 @@ nav {
   align-items: flex-start;
   justify-content: space-between; }
   .main-links ul > li {
+    position: relative;
     padding: 24px 8px; }
 
 .products-sub, .products-sub {
-  display: none !important; }
+  display: none; }
 
 menu {
   font-size: 1.5rem; }
@@ -131,7 +137,7 @@ menu {
     float: right;
     position: fixed;
     right: 0;
-    top: 200px; } }
+    top: 128px; } }
 
 @media (min-width: 1200px) {
   .internalAnchors {
@@ -139,7 +145,7 @@ menu {
     float: right;
     position: fixed;
     right: 0;
-    top: 200px; } }
+    top: 128px; } }
 
 .cardsbricks {
   display: block;
@@ -148,16 +154,17 @@ menu {
 .prodimg {
   display: block;
   mix-blend-mode: darken;
-  float: left; }
+  float: left;
+  max-width: 90vw; }
   @media (min-width: 767px) {
     .prodimg {
-      width: 100%; } }
+      max-width: 90vw; } }
   @media (min-width: 992px) {
     .prodimg {
-      width: 40%; } }
+      max-width: 60vw; } }
   @media (min-width: 1200px) {
     .prodimg {
-      width: 40%; } }
+      max-width: 40%; } }
 
 .desc {
   display: inline-block; }
@@ -186,3 +193,7 @@ p {
 
 .desc ul li {
   line-height: 2rem; }
+
+.internalAnchors h3 {
+  display: block;
+  padding-left: 48px; }

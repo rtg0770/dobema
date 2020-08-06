@@ -9,7 +9,9 @@ nav {
     padding: 24px;
     height: 4 * $xl;
     > div.logo {padding-top: 8px;}
-    > menu {padding-top: $s;}
+    > menu {
+        margin-right: $xl;
+        padding-top: $s;}
 }
 .main-links ul {
     right: 0px;
@@ -20,12 +22,15 @@ nav {
     align-items: flex-start;
     justify-content: space-between;
     > li {
+        position: relative;
         padding: $l $m;
     }
+    
 }
 .products-sub, .products-sub {
-    display: none !important;
+    display: none;
 }
+
 menu {
     font-size: 1.5rem;
 }

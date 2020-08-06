@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>DOBEMA Cihly Porotherm</title>
+        <title>DOBEMA Produkty</title>
         <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
     <body>
@@ -14,20 +14,20 @@
                 <ul>
                     <li class='link home'>Domů</li>
                     <li class='link products active'>Produkty</li>
-                        <ul class='products-sub'>
+                        <!--<ul class='products-sub'>
                             <li class='link'>Beton</li>
                             <li class='link'>Cihly porotherm</li>
-                        </ul>
-                    <li class='link services'>Služby</li>
-                        <ul class='products-sub'>
+                        </ul>-->
+                    <li><a class='link services' onclick="openPage(2)" title="Služby DOBEMA">Služby</a></li>
+                        <!--<ul class='products-sub'>
                             <li class='link'>Předprojektová příprava</li>
                             <li class='link'>Projektování</li>
                             <li class='link'>Realizace staveb</li>
                             <li class='link'>Stavební dozory</li>
-                        </ul>
+                        </ul>-->
                     <li class='link company'>Společnost</li>
                     <li class='link contact'>Kontakt</li>
-                    <li><button onclick="myZoom()">zoom</button></li>
+                    <!--<li><button onclick="myZoom()">zoom</button></li>-->
                 </ul>
             </menu>
             
@@ -39,6 +39,7 @@
             <menu class="internalAnchors">
                 
                 <ul>
+                    <h3>Cihly Porotherm</h3>
                     <li>
                         <a class="link" onclick="myScroll(0)">Porotherm 44 Profi Dryfix</a>
                     </li>
@@ -55,6 +56,10 @@
                         <a class="link" onclick="myScroll(3)">ZTRACENÉ BEDNĚNÍ ZB 40</a>
                     </li>
 
+                    <h3>Beton</h3>
+                    <li>
+                        <a class="link" onclick="myScroll(4)">Beton</a>
+                    </li>
                 </ul>
             </menu>
             
@@ -186,6 +191,24 @@
             }
                             
             
+            }
+            function openPage(x) {
+                
+                var page;
+                switch (x) {
+                case 0:
+                page = "home.html"
+                break;
+
+                case 1:
+                page = "produkty.html"
+                break;
+
+                case 2:
+                page = "sluzby.html"
+                break;
+                }
+                location.href = page;
             }
 
             function myScroll(x) {
