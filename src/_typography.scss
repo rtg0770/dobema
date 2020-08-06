@@ -7,13 +7,9 @@ body {
 h1, h2, h3, h4 {
     font-family: 'Cairo', sans-serif;
 }
-
 h1 {
     display: block;
-    margin: $m;
-    background-image: linear-gradient(to right, rgba(239,238,238,1), rgba(239,238,238,0));
 }
-
 p {
     text-align: justify;
     line-height: 1.5rem;
