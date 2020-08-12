@@ -45,7 +45,7 @@ nav {
   padding: 24px;
   height: 96px; }
   nav > menu {
-    background-image: url("../assets/img/bg3.png");
+    background-color: #efeeee;
     background-repeat: repeat;
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-sizing: border-box;
@@ -184,15 +184,15 @@ menu {
     .desc {
       width: 55%; } }
 
+body, p, ul, .link, strong {
+  font-family: 'Roboto', sans-serif; }
+
 h1, h2, h3, h4 {
   font-family: 'Cairo', sans-serif; }
 
 h1 {
   display: block;
   padding-left: 405px; }
-
-p, ul, .link, strong {
-  font-family: 'Roboto', sans-serif; }
 
 p {
   text-align: justify;
