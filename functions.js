@@ -39,7 +39,7 @@ function openPage(x) {
     var page;
     switch (x) {
     case 0:
-    page = "home.html"
+    page = "index.html"
     break;
 
     case 1:
@@ -49,10 +49,42 @@ function openPage(x) {
     case 2:
     page = "sluzby.html"
     break;
+
+    case 3:
+    page = "kontakty.html"
+    break;
+    
+    case 4:
+    page = "ospolecnosti.html"
+    break;
+
     }
+
     location.href = page;
 }
 
+function openPageFromIndex(z) {
+    var goTo;
+    switch (z) {
+        case 0:
+            goTo = "#01predprojektovapriprava";
+            break;
+            
+            case 1:
+            goTo = "#02projektovani";
+            break;
+        
+            case 2:
+            goTo = "#03realizacestaveb";
+            break;
+        
+            case 3:
+            goTo = "#04stavebnidozory";
+            break;
+    }
+    var page = "sluzby.html"
+    location.href = page + goTo;
+}
 
 function myScroll(x) {
     

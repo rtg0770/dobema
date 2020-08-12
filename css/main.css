@@ -34,6 +34,20 @@ a.link {
 a.link:hover {
   text-decoration: underline; }
 
+.goservice {
+  background-color: #efeeee;
+  padding: 8px 24px;
+  margin: auto; }
+
+.indeximg {
+  z-index: 1000;
+  display: block;
+  margin: auto;
+  margin-top: -24px;
+  transform: rotate(-4deg);
+  width: 100%;
+  height: auto; }
+
 nav {
   display: inline-flex;
   align-items: flex-start;
@@ -184,15 +198,34 @@ menu {
     .desc {
       width: 55%; } }
 
+.cards {
+  vertical-align: top; }
+
+.cards .cardshome {
+  display: inline-block;
+  vertical-align: top;
+  background-image: url("../assets/img/bg3.png");
+  background-repeat: repeat;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+  box-shadow: 6px 6px 16px rgba(209, 205, 199, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
+  border-radius: 8px; }
+
+.cards .cardscontact {
+  display: inline-block;
+  vertical-align: top;
+  background-image: url("../assets/img/bg3.png");
+  background-repeat: repeat;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+  box-shadow: 6px 6px 16px rgba(209, 205, 199, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
+  border-radius: 8px; }
+
 body, p, ul, .link, strong {
   font-family: 'Roboto', sans-serif; }
 
 h1, h2, h3, h4 {
   font-family: 'Cairo', sans-serif; }
-
-h1 {
-  display: block;
-  padding-left: 405px; }
 
 p {
   text-align: justify;
@@ -204,3 +237,35 @@ p {
 .internalAnchors h3 {
   display: block;
   padding-left: 48px; }
+
+.cardshome {
+  text-align: center;
+  box-sizing: content-box;
+  width: 24%;
+  padding: 24px; }
+  .cardshome > p {
+    text-align: justify; }
+  .cardshome > h3 {
+    z-index: 10011;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #efeeee;
+    transform: rotate(-4deg);
+    text-align: center;
+    background-color: #1DB954;
+    padding: 4px 24px; }
+
+.cardscontact {
+  text-align: center;
+  box-sizing: content-box;
+  width: 24%;
+  padding: 24px; }
+  .cardscontact > p {
+    text-align: justify; }
+  .cardscontact > h3 {
+    z-index: 10011;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    padding: 4px 24px; }

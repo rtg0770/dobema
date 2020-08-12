@@ -3,6 +3,7 @@
     <head>
         <title>DOBEMA Produkty</title>
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <meta charset="UTF-8">
     </head>
     <body>
         <div id="wrapper" class="topShrinked">
@@ -12,8 +13,8 @@
             </div>
             <menu class='main-links'>
                 <ul>
-                    <li class='link home'>Domů</li>
-                    <li class='link products active'>Produkty</li>
+                    <li><a class='link home' onclick="setTimeout(openPage(0), 1000)" title="Home DOBEMA">Domů</a></li>
+                    <li><a class='link products active' onclick="setTimeout(openPage(1), 1000)" title="Produkty DOBEMA">Produkty</a></li>
                         <!--<ul class='products-sub'>
                             <li class='link'>Beton</li>
                             <li class='link'>Cihly porotherm</li>
@@ -25,8 +26,8 @@
                             <li class='link'>Realizace staveb</li>
                             <li class='link'>Stavební dozory</li>
                         </ul>-->
-                    <li class='link company'>Společnost</li>
-                    <li class='link contact'>Kontakt</li>
+                    <li><a class='link company' onclick="setTimeout(openPage(4), 1000)" title="O společnosti DOBEMA">Společnost</a></li>
+                    <li><a class='link contact' onclick="setTimeout(openPage(3), 1000)" title="Kontakt DOBEMA">Kontakt</a></li>
                     <!--<li><button onclick="myZoom()">zoom</button></li>-->
                 </ul>
             </menu>

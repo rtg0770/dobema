@@ -3,6 +3,7 @@
     <head>
         <title>DOBEMA Sluzby</title>
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <meta charset="UTF-8">
     </head>
     <body>
         <div id="wrapper" class="topShrinked">
@@ -12,21 +13,21 @@
             </div>
             <menu class='main-links'>
                 <ul>
-                    <li class='link home'>Domů</li>
+                    <li><a class='link home' onclick="setTimeout(openPage(0), 1000)" title="Home DOBEMA">Domů</a></li>
                     <li><a class='link products' onclick="setTimeout(openPage(1), 1000)" title="Produkty DOBEMA">Produkty</a></li>
                         <!--<ul class='products-sub'>
                             <li class='link'>Beton</li>
                             <li class='link'>Cihly porotherm</li>
                         </ul>-->
-                    <li class='link services active'>Služby</li>
+                    <li><a class='link services active' onclick="setTimeout(openPage(2), 1000)" title="Služby DOBEMA">Služby</a></li>
                         <!--<ul class='products-sub'>
                             <li class='link'>Předprojektová příprava</li>
                             <li class='link'>Projektování</li>
                             <li class='link'>Realizace staveb</li>
                             <li class='link'>Stavební dozory</li>
                         </ul>-->
-                    <li class='link company'>Společnost</li>
-                    <li class='link contact'>Kontakt</li>
+                    <li><a class='link company' onclick="setTimeout(openPage(4), 1000)" title="O společnosti DOBEMA">Společnost</a></li>
+                    <li><a class='link contact' onclick="setTimeout(openPage(3), 1000)" title="Kontakt DOBEMA">Kontakt</a></li>
                     <!--<li><button onclick="myZoom()">zoom</button></li>-->
                 </ul>
             </menu>

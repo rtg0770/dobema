@@ -32,3 +32,17 @@ a.link {
 a.link:hover {
     text-decoration: underline;
 }
+.goservice {
+    background-color: $graybglight;
+    padding: $m $l;
+    margin: auto;
+}
+.indeximg {
+    z-index: 1000;
+    display: block;
+    margin: auto;
+    margin-top: -$l;
+    transform: rotate(-4deg);
+    width: 100%;
+    height: auto;
+}

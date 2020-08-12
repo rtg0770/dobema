@@ -10,11 +10,6 @@ h1, h2, h3, h4 {
     font-family: 'Cairo', sans-serif;
 }
 
-h1 {
-    display: block;
-    padding-left: 373px + 32px;
-}
-
 p {
     text-align: justify;
     line-height: 1.5rem;
@@ -27,4 +22,41 @@ p {
 .internalAnchors h3 {
     display: block;
     padding-left: 48px;
+}
+.cardshome {
+    text-align: center;
+    > p {
+        text-align: justify;
+    }
+    > h3 {
+        z-index: 10011;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: $graybglight;
+        transform: rotate(-4deg);
+        text-align: center;
+        background-color: $green;
+    padding: $s $l;}
+    
+    box-sizing: content-box;
+    width: 24%;
+    padding: $l;
+}
+
+.cardscontact {
+    text-align: center;
+    > p {
+        text-align: justify;
+    }
+    > h3 {
+        z-index: 10011;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.04em;
+    padding: $s $l;}
+    
+    box-sizing: content-box;
+    width: 24%;
+    padding: $l;
 }
