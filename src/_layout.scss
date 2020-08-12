@@ -70,6 +70,7 @@ menu {
 }
 .desc {
     display: inline-block;
+    padding-left: $xl;
     @include respond-to(small) {
         width: 100%;
     }
@@ -102,4 +103,20 @@ menu {
         box-sizing: border-box;
         box-shadow: 6px 6px 16px rgba(209, 205, 199, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
         border-radius: 8px;
+}
+
+.cardcompany, .cardcompanymapa {
+    max-width: 50%;
+    display: inline-block;
+        vertical-align: top;
+        background-image: url("../assets/img/bg3.png");
+        background-repeat: repeat;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-sizing: border-box;
+        box-shadow: 6px 6px 16px rgba(209, 205, 199, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
+        border-radius: 8px;
+        padding: $l;
+}
+.cardcompanymapa {
+    margin-left: $xl;
 }
