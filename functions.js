@@ -122,6 +122,14 @@ function myScroll(x) {
     case 7:
     scrollTo = "40bed";
     break;
+
+    case 9:
+    scrollTo = "kbet";
+    break;
+
+    case 11:
+    scrollTo = "litepodlahy";
+    break;
     
     }
 
