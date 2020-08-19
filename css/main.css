@@ -226,7 +226,6 @@ menu {
   border-radius: 8px; }
 
 .cardcompany, .cardcompanymapa {
-  max-width: 50%;
   display: inline-block;
   vertical-align: top;
   background-image: url("../assets/img/bg3.png");
@@ -236,9 +235,20 @@ menu {
   box-shadow: 6px 6px 16px rgba(209, 205, 199, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
   border-radius: 8px;
   padding: 24px; }
+  @media (min-width: 767px) {
+    .cardcompany, .cardcompanymapa {
+      width: 90%; } }
+  @media (min-width: 1200px) {
+    .cardcompany, .cardcompanymapa {
+      width: 50%; } }
 
-.cardcompanymapa {
-  margin-left: 32px; }
+@media (min-width: 767px) {
+  .cardcompanymapa .cardcompany, .cardcompanymapa .cardcompanymapa {
+    margin: auto; } }
+
+@media (min-width: 1200px) {
+  .cardcompanymapa .cardcompany, .cardcompanymapa .cardcompanymapa {
+    margin-left: 8px; } }
 
 body, p, ul, .link, strong {
   font-family: 'Roboto', sans-serif; }
@@ -259,9 +269,7 @@ p {
 
 .cardshome {
   text-align: center;
-  box-sizing: content-box;
-  width: 24%;
-  padding: 24px; }
+  box-sizing: content-box; }
   .cardshome > p {
     text-align: justify; }
   .cardshome > h3 {
@@ -274,12 +282,18 @@ p {
     text-align: center;
     background-color: #1DB954;
     padding: 4px 24px; }
+  @media (min-width: 767px) {
+    .cardshome {
+      width: 90%;
+      padding: 4px; } }
+  @media (min-width: 1200px) {
+    .cardshome {
+      width: 24%;
+      padding: 24px; } }
 
 .cardscontact {
   text-align: center;
-  box-sizing: content-box;
-  width: 24%;
-  padding: 24px; }
+  box-sizing: content-box; }
   .cardscontact > p {
     text-align: justify; }
   .cardscontact > h3 {
@@ -288,3 +302,11 @@ p {
     text-align: center;
     letter-spacing: 0.04em;
     padding: 4px 24px; }
+  @media (min-width: 767px) {
+    .cardscontact {
+      width: 90%;
+      padding: 4px; } }
+  @media (min-width: 1200px) {
+    .cardscontact {
+      width: 24%;
+      padding: 24px; } }
