@@ -5,11 +5,13 @@ box-sizing: border-box;
 box-shadow: 6px 6px 16px rgba(209, 205, 199, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
 border-radius: 8px;
 padding: $m $l;
-}
 
-.small > .logo > img {
-    height: 70px;
-    width: auto;
+}
+h3:hover, .cardshome {
+    cursor: pointer;
+}
+img {
+    max-width: 90%;
 }
 
 .logo > img {
@@ -33,16 +35,15 @@ a.link:hover {
     text-decoration: underline;
 }
 .goservice {
-    background-color: $graybglight;
+    background-color: rgba($color: $green, $alpha: 0.3);
     padding: $m $l;
     margin: auto;
 }
 .indeximg {
-    z-index: 1000;
     display: block;
     margin: auto;
-    margin-top: -$l;
-    transform: rotate(-4deg);
+    padding: $m;
+    //transform: rotate(-4deg);
     width: 100%;
     height: auto;
 }

@@ -1,83 +1,72 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>DOBEMA, produkty</title>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <meta charset="UTF-8">
-        <meta name="robots" content="dobem produkty, dobema s.r.o. produkty, stavaři jablunkov, stavebni firmy beskydy" />
-        <meta name="description" content="Produkty - DOBEMA s.r.o., Vaši stavaři." />
-        <link rel="icon" href="favicon.ico" type="image/ico" sizes="16x16">
-    </head>
-    <body>
-        <div id="wrapper" class="topShrinked">
-        <nav id="topNav" class="small">
-            <div class='logo'>
-                <img src="./assets/img/do-be-ma.png" alt="DOBEMA s.r.o.">
+
+<head>
+    <title>DOBEMA, produkty</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta name="robots" content="dobem produkty, dobema s.r.o. produkty, stavaři jablunkov, stavebni firmy beskydy" />
+    <meta name="description" content="Produkty - DOBEMA s.r.o., Vaši stavaři." />
+    <link rel="icon" href="favicon.ico" type="image/ico" sizes="16x16">
+</head>
+
+<body>
+    <nav id="topNav">
+        <div class='logo'>
+            <img src="./assets/img/do-be-ma.png" alt="DOBEMA s.r.o.">
+        </div>
+        
+        <menu class='main-links'>
+            <div id="mainmenu">
+            <a class='link home ' onclick="setTimeout(openPage(0), 1000)" title="Home DOBEMA">Domů</a>
+            <a class='link products active' onclick="setTimeout(openPage(1), 1000)"
+                title="Produkty DOBEMA">Produkty</a>
+            <!--<ul class='products-sub'>
+                        <li class='link'>Beton</li>
+                        <li class='link'>Cihly porotherm</li>
+                    </ul>-->
+            <a class='link services' onclick="setTimeout(openPage(2), 1000)" title="Služby DOBEMA">Služby</a>
+            <!--<ul class='products-sub'>
+                        <li class='link'>Předprojektová příprava</li>
+                        <li class='link'>Projektování</li>
+                        <li class='link'>Realizace staveb</li>
+                        <li class='link'>Stavební dozory</li>
+                    </ul>-->
+            <a class='link company' onclick="setTimeout(openPage(4), 1000)"
+                title="O společnosti DOBEMA">Společnost</a>
+
+            <a class='link galerie' onclick="setTimeout(openPage(5), 1000)"
+                title="Galerie DOBEMA">Galerie</a>
+                <a class='link contact' onclick="setTimeout(openPage(3), 1000)" title="Kontakt DOBEMA">Kontakt</a>
+            <!--<li><button onclick="myZoom()">zoom</button></li>-->
             </div>
-            <menu class='main-links'>
-                <ul>
-                    <li><a class='link home' onclick="setTimeout(openPage(0), 1000)" title="Home DOBEMA">Domů</a></li>
-                    <li><a class='link products active' onclick="setTimeout(openPage(1), 1000)" title="Produkty DOBEMA">Produkty</a></li>
-                        <!--<ul class='products-sub'>
-                            <li class='link'>Beton</li>
-                            <li class='link'>Cihly porotherm</li>
-                        </ul>-->
-                    <li><a class='link services' onclick="setTimeout(openPage(2), 1000)" title="Služby DOBEMA">Služby</a></li>
-                        <!--<ul class='products-sub'>
-                            <li class='link'>Předprojektová příprava</li>
-                            <li class='link'>Projektování</li>
-                            <li class='link'>Realizace staveb</li>
-                            <li class='link'>Stavební dozory</li>
-                        </ul>-->
-                    <li><a class='link company' onclick="setTimeout(openPage(4), 1000)" title="O společnosti DOBEMA">Společnost</a></li>
-                    <li><a class='link contact' onclick="setTimeout(openPage(3), 1000)" title="Kontakt DOBEMA">Kontakt</a></li>
-                    <!--<li><button onclick="myZoom()">zoom</button></li>-->
-                </ul>
-            </menu>
-            
-        </nav>
+            <button class="smalltogglemenu"  onclick="toggleMenu()">menu</button>
+        </menu>
         
         
-        <div class='content'>
-            <h1>Produkty</h1>
-            <menu class="internalAnchors">
-                
-                <ul>
-                    <h3>Cihly Porotherm</h3>
-                    <li>
-                        <a class="link" onclick="myScroll(4)">Porotherm 44 Profi Dryfix</a>
-                    </li>
 
-                    <li>
-                        <a class="link" onclick="myScroll(5)">Porotherm 30 Profi Dryfix</a>
-                    </li>
+    </nav>
 
-                    <li>
-                        <a class="link" onclick="myScroll(6)">Porotherm 11,5 Profi Dryfix</a>
-                    </li>
-
-                    <li>
-                        <a class="link" onclick="myScroll(7)">ZTRACENÉ BEDNĚNÍ ZB 40</a>
-                    </li>
-
-                    <h3>Beton</h3>
-                    <li>
-                        <a class="link" onclick="myScroll(9)">Konstrukční beton</a>
-                    </li>
-
-                    <li>
-                        <a class="link" onclick="myScroll(11)">Lité podlahy</a>
-                    </li>
-                </ul>
-            </menu>
-            
-            <div class="cards-col">
-            
-            <div class='cardsbricks' id="44profidryfix">
-                
+    <div class="wrapper">
+        <!--<h1>Produkty</h1>-->
+        <menu class="internalAnchors">
+            <ul>
+                <li><strong>Cihly Porotherm</strong></li>
+                <li><a class="link" onclick="myScroll(4)">Porotherm 44 Profi Dryfix</a></li>
+                <li><a class="link" onclick="myScroll(5)">Porotherm 30 Profi Dryfix</a></li>
+                <li><a class="link" onclick="myScroll(6)">Porotherm 11,5 Profi Dryfix</a></li>
+                <li><a class="link" onclick="myScroll(7)">Ztracené bednění ZB 40</a></li>
+                <br>
+                <li><strong>Beton</strong></li>
+                <li><a class="link" onclick="myScroll(9)">Konstrukční beton</a></li>
+                <li><a class="link" onclick="myScroll(11)">Lité podlahy</a></li>
+            </ul>
+        </menu>
+        <div class="content">
+            <div class="cards">
+                <h1>Produkty</h1>
+                <div class="card" id="44profidryfix">
                     <img class="prodimg" src='./assets/img/produkty/porotherm/44 profi dryfix.jpg' alt='Porotherm 44 Profi Dryfix' />
-                
-                
                 
                 <div class="desc">
                 <h2>Porotherm 44 Profi Dryfix</h2>
@@ -97,114 +86,118 @@
                         <li>Vyráběno v pevnosti P8,P10,P15</li>
                     </ul>
                 </div>
-            </div>
-            <div class='cardsbricks' id="30profidryfix">
-                <img class="prodimg" src='./assets/img/produkty/porotherm/30 Profi dryfix.jpg' alt='Porotherm 30 Profi Dryfix' />
-                
-                <div class="desc">
-                <h2>Porotherm 30 Profi Dryfix</h2>
-                    <strong>Cihly pro nosné zdivo</strong>
-                    <p>Cihly broušené Porotherm 30 Profi Dryfix jsou určené pro omítané jednovrstvé vnitřní i vnější nosné zdivo tloušťky 300 mm. Lze je též použít pro vnitřní nosnou část vrstveného zdiva v kombinaci s tepelným izolantem a případně s dalšími cihelnými materiály tvořícími vnější ochrannou část vrstveného zdiva. Ke zdění těchto cihel se používá speciální pěna pro zdění, která se nanáší ve dvou pruzích při vnějších okrajích cihel. Součástí dodávky je odpovídající množství zdicí pěny Porotherm Dryfix. Pro založení stěn se dodává požadované množství zakládací malty Porotherm Profi AM (Anlegemörtel).
-                    </p>
-                    <ul>
-                        <li>Délka 247 mm</li>
-                        <li>Výška 249 mm</li>
-                        <li>Šířka 300 mm</li>
-                        <li>Hmotnost 15,7 kg</li>
-                        <li>Počet kusů na m² 16 ks</li>
-                        <li>Počet kusů na paletě 80 ks</li>
-                        <li>Hmotnost palety 1290 kg</li>
-                        <li>Součinitel tepelné vodivosti bez omítek (λ) 0,115 W/mK</li>
-                        <li>Součinitel prostupu tepla s omítkami (U) 0,500 W/m²K</li>
-                        <li>Vyráběno v pevnosti P8,P10,P15</li>
-                    </ul>
                 </div>
-            </div>
-            <div class='cardsbricks' id="115profidryfix">
-                <img class="prodimg" src='./assets/img/produkty/porotherm/11,5.jpg' alt='Porotherm 11,5 Profi Dryfix' />
-                
-                <div class="desc">
-                <h2>Porotherm 11,5 Profi Dryfix</h2>
-                    <strong>Cihly pro nenosné příčky</strong>
-                    <p>Cihly broušené Porotherm 11,5 Profi Dryfix jsou určené pro omítané nenosné zdivo vnitřních příček tloušťky 115 mm. Lze je též použít jako přizdívku tepelné izolace v místě železobetonových ztužujících věnců nebo pro vnější ochrannou část vrstveného zdiva. Ke zdění těchto cihel se používá speciální pěna pro zdění, která se nanáší v jednom pruhu na střed ložné plochy cihly.Cihly Porotherm 11,5 Profi Dryfix jsou dodávány zafóliované na vratných paletách rozměrů 1180 x 1000 mm.
-                    </p>
-                    <ul>
-                        <li>Délka 497 mm</li>
-                        <li>Výška 249 mm</li>
-                        <li>Šířka 115 mm</li>
-                        <li>Hmotnost 12,1 kg</li>
-                        <li>Počet kusů na m² 8 ks</li>
-                        <li>Počet kusů na paletě 100 ks</li>
-                        <li>Hmotnost palety 1240 kg</li>
-                        <li>Součinitel tepelné vodivosti bez omítek (λ) 0,260 W/mK</li>
-                        <li>Součinitel prostupu tepla s omítkami (U) 1,300 W/m²K</li>
-                        <li>Vyráběno v pevnosti P8,P10</li>
-                    </ul>
+                <div class='card' id="30profidryfix">
+                    <img class="prodimg" src='./assets/img/produkty/porotherm/30 Profi dryfix.jpg' alt='Porotherm 30 Profi Dryfix' />
+                    
+                    <div class="desc">
+                    <h2>Porotherm 30 Profi Dryfix</h2>
+                        <strong>Cihly pro nosné zdivo</strong>
+                        <p>Cihly broušené Porotherm 30 Profi Dryfix jsou určené pro omítané jednovrstvé vnitřní i vnější nosné zdivo tloušťky 300 mm. Lze je též použít pro vnitřní nosnou část vrstveného zdiva v kombinaci s tepelným izolantem a případně s dalšími cihelnými materiály tvořícími vnější ochrannou část vrstveného zdiva. Ke zdění těchto cihel se používá speciální pěna pro zdění, která se nanáší ve dvou pruzích při vnějších okrajích cihel. Součástí dodávky je odpovídající množství zdicí pěny Porotherm Dryfix. Pro založení stěn se dodává požadované množství zakládací malty Porotherm Profi AM (Anlegemörtel).
+                        </p>
+                        <ul>
+                            <li>Délka 247 mm</li>
+                            <li>Výška 249 mm</li>
+                            <li>Šířka 300 mm</li>
+                            <li>Hmotnost 15,7 kg</li>
+                            <li>Počet kusů na m² 16 ks</li>
+                            <li>Počet kusů na paletě 80 ks</li>
+                            <li>Hmotnost palety 1290 kg</li>
+                            <li>Součinitel tepelné vodivosti bez omítek (λ) 0,115 W/mK</li>
+                            <li>Součinitel prostupu tepla s omítkami (U) 0,500 W/m²K</li>
+                            <li>Vyráběno v pevnosti P8,P10,P15</li>
+                        </ul>
                     </div>
-            </div>
-            <div class='cardsbricks' id="40bed">
-                <img class="prodimg" src='./assets/img/produkty/porotherm/ZB 40.jpg' alt='Ztracené bednění ZB 40' />
-                
-                <div class="desc">
-                <h2>ZTRACENÉ BEDNĚNÍ ZB 40</h2>
-                    <p>Ztracené bednění je určeno pro všechny výstavby základových pásů různých druhů staveb bez použití klasického bednění. Tento postup přináší nejen časovou a finanční úsporu, ale odpadá nutnost po betonáži základy pracně odbedňovat. Všechny typy bednění mají tzv. zámek, který usnadňuje výstavbu, protože tvarovky do sebe jednoduše vzájemně zapadají.
-                    </p>
+                </div>
+                <div class='card' id="115profidryfix">
+                    <img class="prodimg" src='./assets/img/produkty/porotherm/11,5.jpg' alt='Porotherm 11,5 Profi Dryfix' />
+                    
+                    <div class="desc">
+                    <h2>Porotherm 11,5 Profi Dryfix</h2>
+                        <strong>Cihly pro nenosné příčky</strong>
+                        <p>Cihly broušené Porotherm 11,5 Profi Dryfix jsou určené pro omítané nenosné zdivo vnitřních příček tloušťky 115 mm. Lze je též použít jako přizdívku tepelné izolace v místě železobetonových ztužujících věnců nebo pro vnější ochrannou část vrstveného zdiva. Ke zdění těchto cihel se používá speciální pěna pro zdění, která se nanáší v jednom pruhu na střed ložné plochy cihly.Cihly Porotherm 11,5 Profi Dryfix jsou dodávány zafóliované na vratných paletách rozměrů 1180 x 1000 mm.
+                        </p>
+                        <ul>
+                            <li>Délka 497 mm</li>
+                            <li>Výška 249 mm</li>
+                            <li>Šířka 115 mm</li>
+                            <li>Hmotnost 12,1 kg</li>
+                            <li>Počet kusů na m² 8 ks</li>
+                            <li>Počet kusů na paletě 100 ks</li>
+                            <li>Hmotnost palety 1240 kg</li>
+                            <li>Součinitel tepelné vodivosti bez omítek (λ) 0,260 W/mK</li>
+                            <li>Součinitel prostupu tepla s omítkami (U) 1,300 W/m²K</li>
+                            <li>Vyráběno v pevnosti P8,P10</li>
+                        </ul>
+                        </div>
+                </div>
+                <div class='card' id="40bed">
+                    <img class="prodimg" src='./assets/img/produkty/porotherm/ZB 40.jpg' alt='Ztracené bednění ZB 40' />
+                    
+                    <div class="desc">
+                    <h2>Ztracené bednění ZB 40</h2>
+                        <p>Ztracené bednění je určeno pro všechny výstavby základových pásů různých druhů staveb bez použití klasického bednění. Tento postup přináší nejen časovou a finanční úsporu, ale odpadá nutnost po betonáži základy pracně odbedňovat. Všechny typy bednění mají tzv. zámek, který usnadňuje výstavbu, protože tvarovky do sebe jednoduše vzájemně zapadají.
+                        </p>
+                        <ul>
+                            <li>Rozměry: 500x400x250</li>
+                            <li>Hmotnost: 37,83kg/ks</li>
+                            <li>počet (ks/m2): 8,0ks</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class='card' id="kbet">
+                    <img class="prodimg" src='./assets/img/produkty/konstrukcnibeton.jpg' alt='Konstrukcni beton' />
+                    
+                    <div class="desc">
+                    <h2>Konstrukční beton</h2>
+                    <strong>Beton je deklarován dle betonářské normy EN 206-A1</strong>
+    
                     <ul>
-                        <li>Rozměry: 500x400x250</li>
-                        <li>Hmotnost: 37,83kg/ks</li>
-                        <li>počet (ks/m2): 8,0ks</li>
+                        <li>Minimální zrnitost 8 mm pro konstrukční betony dle EN 206-A1.</li>
+                        <li>Vysoká konstrukční pevnost – 20 MPa a 30 MPa.</li>
+                        <li>Pevnostní třída C 16/20 a C 25/30 – na beton jsou předepsány dvě zkoušky na tlak, kde první číslo je válcová pevnost v tlaku a druhé číslo označuje krychelnou pevnost.</li>
+                        <li>Určený pro vytváření nosných stavebních konstrukcí vč. konstrukcí vyžadujících armovací výztuže.</li>
+                        <li>Možné použití i pro vytváření podlah s požadavky na vyšší či provozní zatížení povrchu – sklepy, garáže.</li>
                     </ul>
+    
+                    <p>např. Cemix 350 Beton hrubý 20 MPa s označením</p>
+                    <strong>C 16/20 – X0 (CZ,F1) – C1 0,20 – Dmax8</strong>
+                    <ul>
+                        <li>C – beton (concrete)</li>
+                        <li>16/ (první číslo) – válcová pevnost N/mm2</li>
+                        <li>/20 (druhé číslo) – krychelná pevnost N/mm2</li>
+                        <li>X0 (CZ,F1) – stupeň vlivu prostředí na beton</li>
+                        <li>C1 0,20 – stupeň zhutnitelnosti betonu</li>
+                        <li>Dmax 8 – zrnitost betonu</li>
+                    </ul>
+                    <p>Dohled nad systémem výroby provádí pouze autorizovaná zkušebna.</p><br>
+                    <p>Zkoušky na konstrukční betony jsou rozsáhlejší a dražší.</p>
+                    </div>
+                </div>
+    
+                <div class='card' id="litepodlahy">
+                    <img class="prodimg" src='./assets/img/produkty/litepodlahy.jpg' alt='Lité podlahy' />
+                    
+                    <div class="desc">
+                    <h2>Lité podlahy</h2>
+                        <p><strong>Anhydritový litý potěr</strong> - tekutá samonivelační směs na bázi síranu vápenatého se samonivelačním účinkem. Vhodný pro zalévání podlahového topení.
+                        </p>
+                        <p><strong>Cementový litý potěr</strong> - tekutá samonivelační směs na bázi cementu se samonivelačním účinkem.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class='cardsbricks' id="kbet">
-                <img class="prodimg" src='./assets/img/produkty/konstrukcnibeton.jpg' alt='Konstrukcni beton' />
-                
-                <div class="desc">
-                <h2>KONSTRUČKNÍ BETON</h2>
-                <strong>Beton je deklarován dle betonářské normy EN 206-A1</strong>
-
-                <ul>
-                    <li>Minimální zrnitost 8 mm pro konstrukční betony dle EN 206-A1.</li>
-                    <li>Vysoká konstrukční pevnost – 20 MPa a 30 MPa.</li>
-                    <li>Pevnostní třída C 16/20 a C 25/30 – na beton jsou předepsány dvě zkoušky na tlak, kde první číslo je válcová pevnost v tlaku a druhé číslo označuje krychelnou pevnost.</li>
-                    <li>Určený pro vytváření nosných stavebních konstrukcí vč. konstrukcí vyžadujících armovací výztuže.</li>
-                    <li>Možné použití i pro vytváření podlah s požadavky na vyšší či provozní zatížení povrchu – sklepy, garáže.</li>
-                </ul>
-
-                např. Cemix 350 Beton hrubý 20 MPa s označením<br>
-                <strong>C 16/20 – X0 (CZ,F1) – C1 0,20 – Dmax8</strong>
-                <ul>
-                    <li>C – beton (concrete)</li>
-                    <li>16/ (první číslo) – válcová pevnost N/mm2</li>
-                    <li>/20 (druhé číslo) – krychelná pevnost N/mm2</li>
-                    <li>X0 (CZ,F1) – stupeň vlivu prostředí na beton</li>
-                    <li>C1 0,20 – stupeň zhutnitelnosti betonu</li>
-                    <li>Dmax 8 – zrnitost betonu</li>
-                </ul>
-                Dohled nad systémem výroby provádí pouze autorizovaná zkušebna.<br>
-                Zkoušky na konstrukční betony jsou rozsáhlejší a dražší.
-                </div>
-            </div>
-
-            <div class='cardsbricks' id="litepodlahy">
-                <img class="prodimg" src='./assets/img/produkty/litepodlahy.jpg' alt='Lité podlahy' />
-                
-                <div class="desc">
-                <h2>LITÉ PODLAHY</h2>
-                    <p><strong>Anhydritový litý potěr</strong> - tekutá samonivelační směs na bázi síranu vápenatého se samonivelačním účinkem. Vhodný pro zalévání podlahového topení.
-                    </p>
-                    <p><strong>Cementový litý potěr</strong> - tekutá samonivelační směs na bázi cementu se samonivelačním účinkem.
-                    </p>
-                </div>
-            </div>
-
         </div>
-        </div>
-        <footer>
-            <p>&copy; 2020 DOBEMA s.r.o.</p>
-        </footer>
+
+
+
     </div>
+
+    <footer>
+        <p>&copy; 2020 DOBEMA s.r.o.</p>
+    </footer>
     <script src="./functions.js">
     </script>
-    </body>
+</body>
+
 </html>

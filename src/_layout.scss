@@ -1,137 +1,236 @@
 html {
     scroll-behavior: smooth;
+    scroll-padding: 100px 0px 0px 100px;
 }
-body {
-    margin: 0;
-    background-image: url("../assets/img/bg3.png");
-    background-repeat: repeat;
+.wrapper {
+    display: grid;
+    grid-template-areas:
+    "content"
+    "footer"
+    ;
+    padding-top: 3*$xl;
 }
-menu {
-    margin: 0;
-}
-#wrapper {
-    padding: 5*$xl $l;
-}
-#wrapper.topShrinked {
-    padding: 128px $l;
+#topNav {
+    position: fixed;
+    display: grid;
+    grid-auto-columns: 5fr 7fr;
+    grid-template-areas:
+    "logos menu";
 }
 
-.cards-col {
-    
-    @include respond-to(small) {
-        width: 100vw;
-    }
-    @include respond-to(medium) {
-        width: 75vw;
-    }
-    @include respond-to(large) {
-        width: 75vw;
-    }
-}
-.internalAnchors {
-    @include respond-to(small) {
-        width: 100vw;
-    }
-    @include respond-to(medium) {
-        width: 25vw;
-        float: right;
-        position: fixed;
-        right: 0;
-        top: 128px;
-    }
-    @include respond-to(large) {
-        width: 25vw;
-        float: right;
-        position: fixed;
-        right: 0;
-        top: 128px;
+.logo {
+    grid-area: logos;
+    > img {
+        max-height: 2*$xl;
     }
 }
 
-.cardsbricks {
-    display: block;
-    width: 100%;
+menu.main-links {
+    padding: unset;
+    grid-area: menu;
+    height: unset;
 }
-.prodimg {
-    display: block;
-    mix-blend-mode: darken;
-    float: left;
-    max-width: 90vw;
 
-@include respond-to(small) {
-    max-width: 90vw;
+a.link {
+    padding: $m $l;
 }
-@include respond-to(medium) {
-    max-width: 60vw;
-}
-@include respond-to(large) {
-    max-width: 40%;
-}
-}
-.desc {
-    display: inline-block;
-    padding-left: $xl;
-    @include respond-to(small) {
-        width: 100%;
-    }
+.content {
+    grid-area: content;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+    "scroll";
+
     @include respond-to(medium) {
-        width: 55%;
-    }
+        grid-auto-columns: 8fr 4fr;
+        grid-template-areas:
+        "scroll menu";
+        }
     @include respond-to(large) {
-        width: 55%;
+    grid-auto-columns: 8fr 4fr;
+    grid-template-areas:
+    "scroll menu";
     }
+
+}
+.contentgalerie {
+    grid-area: content;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+    "scroll";
+
+    @include respond-to(medium) {
+        grid-auto-columns: 6fr 6fr;
+        grid-template-areas:
+        "scroll menu";
+        }
+    @include respond-to(large) {
+    grid-auto-columns: 6fr 6fr;
+    grid-template-areas:
+    "scroll menu";
+    }
+
 }
 .cards {
-    vertical-align: top;
+    grid-area: scroll;
+    display: grid;
+    grid-row-gap: 3*$xl;
 }
-.cards .cardshome{
-        display: inline-block;
-        vertical-align: top;
-        background-image: url("../assets/img/bg3.png");
-        background-repeat: repeat;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        box-sizing: border-box;
-        box-shadow: 6px 6px 16px rgba(209, 205, 199, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
-        border-radius: 8px;
+.card {
+    display: grid;
+    grid-template-areas: "img" "desc";
+    grid-auto-columns: 1fr;
+
+   @include respond-to(medium) {
+    grid-template-areas: "img desc";
+    grid-auto-columns: 4fr 8fr;
+        min-height: 200px;
+}
+@include respond-to(large) {
+    grid-template-areas: "img desc";
+    grid-auto-columns: 4fr 8fr;
+    min-height: 200px;
+}
+}
+
+.cardgal {
+    background-color: rgba($color: $graybglight, $alpha: 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    box-shadow: 6px 6px 16px rgba(209, 205, 199, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    padding: $l $xl;
+}
+
+.prodimg {
+    grid-area: img;
+    mix-blend-mode: darken;
+    padding: $s;
+    @include respond-to(medium) {
+    padding: $m;
     }
-.cards .cardscontact {
-        display: inline-block;
-        vertical-align: top;
-        background-image: url("../assets/img/bg3.png");
-        background-repeat: repeat;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        box-sizing: border-box;
-        box-shadow: 6px 6px 16px rgba(209, 205, 199, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
-        border-radius: 8px;
+    @include respond-to(large) {
+    padding: $l;
+    }
+}
+.desc {
+    grid-area: desc;
 }
 
-.cardcompany, .cardcompanymapa {
-  
-        @include respond-to(small) {
-            width: 90%;
-        }
-        @include respond-to(large) {
-            width: 50%;
-        }
+menu.internalAnchors {
+    grid-area: unset;
+    float: right;
+    display: block;
+    position: fixed;
+    top: 4*$xl;
+    right: $l;
+    visibility: hidden;
 
-    display: inline-block;
-        vertical-align: top;
-        background-image: url("../assets/img/bg3.png");
-        background-repeat: repeat;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        box-sizing: border-box;
-        box-shadow: 6px 6px 16px rgba(209, 205, 199, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
-        border-radius: 8px;
-        padding: $l;
+    @include respond-to(medium) {
+    visibility: visible;
+    }
+
+    @include respond-to(large) {
+    visibility: visible;
+    }
+}
+
+footer {
+    grid-area: footer;
+}
+
+menu.internalAnchors {
+    > ul {
+        display: table;
+        > li {
+            display: table-row;
+        }
+}
+}
+
+.cardsabout {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas: "info" "mapa";
+
+    @include respond-to(medium) {
+        grid-auto-columns: 1fr 500px;
+        grid-template-areas: "info mapa";
+    }
+}
+.cardabout {
+    grid-area: info;
+    background-color: rgba($color: $graybglight, $alpha: 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    box-shadow: 6px 6px 16px rgba(209, 205, 199, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    padding: $l $xl;
+
 }
 .cardcompanymapa {
-    .cardcompany, .cardcompanymapa {
-        @include respond-to(small) {
-            margin:auto
-        }
-        @include respond-to(large) {
-            margin-left: $m;
-        }
+    grid-area: mapa;
+    background-color: rgba($color: $graybglight, $alpha: 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    box-shadow: 6px 6px 16px rgba(209, 205, 199, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    padding: $l $xl;
+}
+.cardshome {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+    "col1"
+    "col2"
+    "col3"
+    "col4";
+
+    @include respond-to(medium) {
+    grid-auto-columns: 1fr 1fr;
+    grid-template-areas: "col1 col2"
+    "col3 col4";
     }
     
+    @include respond-to(large) {
+    grid-auto-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "col1 col2 col3 col4";
+    }
+
+}
+
+.main-links {
+    display: grid;
+    background-color: rgba($color: $graybglight, $alpha: 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    box-shadow: 6px 6px 16px rgba(209, 205, 199, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    padding: $l $xl;
+    > a {
+        display: block;
+        width: 300px;
+    }
+    @include respond-to(medium) {
+    display: grid;
+    
+}
+}
+
+
+.smalltogglemenu {
+    display: block;
+
+    @include respond-to(medium) {
+        display: none;
+    }
+}
+
+.hiddn {
+    display: none;
+
+    @include respond-to(medium) {
+        display: grid;
+    }
 }

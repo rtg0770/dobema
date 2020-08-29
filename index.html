@@ -9,70 +9,78 @@
         <link rel="icon" href="favicon.ico" type="image/ico" sizes="16x16">
     </head>
     <body>
-        <div id="wrapper" class="topShrinked">
-        <nav id="topNav" class="small">
+        <nav id="topNav">
             <div class='logo'>
                 <img src="./assets/img/do-be-ma.png" alt="DOBEMA s.r.o.">
             </div>
+            
             <menu class='main-links'>
-                <ul>
-                    <li><a class='link home active' onclick="setTimeout(openPage(0), 1000)" title="Home DOBEMA">Domů</a></li>
-                    <li><a class='link products' onclick="setTimeout(openPage(1), 1000)" title="Produkty DOBEMA">Produkty</a></li>
-                        <!--<ul class='products-sub'>
+                <div id="mainmenu">
+                <a class='link home active' onclick="setTimeout(openPage(0), 1000)" title="Home DOBEMA">Domů</a>
+                <a class='link products' onclick="setTimeout(openPage(1), 1000)"
+                    title="Produkty DOBEMA">Produkty</a>
+                <!--<ul class='products-sub'>
                             <li class='link'>Beton</li>
                             <li class='link'>Cihly porotherm</li>
                         </ul>-->
-                    <li><a class='link services' onclick="setTimeout(openPage(2), 1000)" title="Služby DOBEMA">Služby</a></li>
-                        <!--<ul class='products-sub'>
+                <a class='link services' onclick="setTimeout(openPage(2), 1000)" title="Služby DOBEMA">Služby</a>
+                <!--<ul class='products-sub'>
                             <li class='link'>Předprojektová příprava</li>
                             <li class='link'>Projektování</li>
                             <li class='link'>Realizace staveb</li>
                             <li class='link'>Stavební dozory</li>
                         </ul>-->
-                    <li><a class='link company' onclick="setTimeout(openPage(4), 1000)" title="O společnosti DOBEMA">Společnost</a></li>
-                    <li><a class='link contact' onclick="setTimeout(openPage(3), 1000)" title="Kontakt DOBEMA">Kontakt</a></li>
-                    <!--<li><button onclick="myZoom()">zoom</button></li>-->
-                </ul>
+                <a class='link company' onclick="setTimeout(openPage(4), 1000)"
+                    title="O společnosti DOBEMA">Společnost</a>
+    
+                <a class='link galerie' onclick="setTimeout(openPage(5), 1000)"
+                    title="Galerie DOBEMA">Galerie</a>
+                    <a class='link contact' onclick="setTimeout(openPage(3), 1000)" title="Kontakt DOBEMA">Kontakt</a>
+                <!--<li><button onclick="myZoom()">zoom</button></li>-->
+                </div>
+                <button class="smalltogglemenu"  onclick="toggleMenu()">menu</button>
             </menu>
-        </nav>
-        <div class='content'>
-            <h1>Vítejte! DOBEMA, vaši stavaři!</h1> 
-            <div class="cards">
-                <div class='cardshome'>
-                    <h3>Předprojektová příprava</h3>
-                    <img class="indeximg" src='./assets/img/sluzby/predprojektova.jpg' alt='Předprojektová příprava' />
-                    <p>U každého projektu je velmi důležitá kvalitní předprojektová příprava. Jaké jsou základní předpoklady pro to, aby žádné změny v projektu nenastaly?
-                    </p>
-                    <a class="link goservice" onclick="openPageFromIndex(0)">Dozvědět se více</a>
-                </div>
-                <div class='cardshome'>
-                    <h3>Projektování</h3>
-                    <img class="indeximg" src='./assets/img/sluzby/novostavbardkojkovice.jpg' alt='Novostavba' />
-                    <p>Chcete se dozvědět, jaké jsou typy projektů? Jaká je cena vyřízení ohlášení stavby nebo stavebního povolení a co obsahuje? 
-                    </p>
-                    <a class="link goservice" onclick="openPageFromIndex(1)">Dozvědět se více</a>
-                </div>
-                <div class='cardshome'>
-                    <h3>Realizace staveb</h3>
-                    <img class="indeximg" src='./assets/img/sluzby/realizace2.jpg' alt='Realizace' />
-                    <p>Pro své zákazníky z oblasti soukromého, ale i veřejného sektoru a podnikatelské sféry jsme díky profesnímu, strojnímu i materiálovému vybavení připravení realizovat kompletní stavby v postavení generálního dodavatele. 
-                    </p>
-                    <a class="link goservice" onclick="openPageFromIndex(2)">Dozvědět se více</a>
-                </div>
-                <div class='cardshome'>
-                    <h3>Stavební dozory</h3>
-                    <img class="indeximg" src='./assets/img/sluzby/stavba.jpg' alt='Beskydy' />
-                    <p>Cílem každého stavebníka je zrealizovat stavební dílo v co nejvyšší kvalitě, za co nejpříznivější náklady a v co největší užitné hodnotě. Jak toho dosáhnout? 
-                    </p>
-                    <a class="link goservice" onclick="openPageFromIndex(3)">Dozvědět se více</a>
-                </div>
-            </div>
+            
+            
 
+        </nav>
+        <div class="wrapper">
+            <div class="contenthp">
+                <h1>Vítejte! DOBEMA, vaši stavaři!</h1> 
+        <div class="cardshome">
+            <div class='cardhome'>
+                <h3  onclick="openPageFromIndex(0)">Předprojektová příprava</h3>
+                <img class="indeximg" src='./assets/img/sluzby/predprojektova.jpg' alt='Předprojektová příprava' />
+                <p>U každého projektu je velmi důležitá kvalitní předprojektová příprava. Jaké jsou základní předpoklady pro to, aby žádné změny v projektu nenastaly?
+                </p>
+                <a class="link goservice" onclick="openPageFromIndex(0)">Dozvědět se více</a>
+            </div>
+            <div class='cardhome'>
+                <h3 onclick="openPageFromIndex(1)">Projektování</h3>
+                <img class="indeximg" src='./assets/img/sluzby/novostavbardkojkovice.jpg' alt='Novostavba' />
+                <p>Chcete se dozvědět, jaké jsou typy projektů? Jaká je cena vyřízení ohlášení stavby nebo stavebního povolení a co obsahuje? 
+                </p>
+                <a class="link goservice" onclick="openPageFromIndex(1)">Dozvědět se více</a>
+            </div>
+            <div class='cardhome'>
+                <h3 onclick="openPageFromIndex(2)">Realizace staveb</h3>
+                <img class="indeximg" src='./assets/img/sluzby/realizace2.jpg' alt='Realizace' />
+                <p>Pro své zákazníky z oblasti soukromého, ale i veřejného sektoru a podnikatelské sféry jsme díky profesnímu, strojnímu i materiálovému vybavení připravení realizovat kompletní stavby v postavení generálního dodavatele. 
+                </p>
+                <a class="link goservice" onclick="openPageFromIndex(2)">Dozvědět se více</a>
+            </div>
+            <div class='cardhome'>
+                <h3 onclick="openPageFromIndex(3)">Stavební dozory</h3>
+                <img class="indeximg" src='./assets/img/sluzby/stavba.jpg' alt='Beskydy' />
+                <p>Cílem každého stavebníka je zrealizovat stavební dílo v co nejvyšší kvalitě, za co nejpříznivější náklady a v co největší užitné hodnotě. Jak toho dosáhnout? 
+                </p>
+                <a class="link goservice" onclick="openPageFromIndex(3)">Dozvědět se více</a>
+            </div>
+            </div>
         </div>
         <footer>
             <p>&copy; 2020 DOBEMA s.r.o.</p>
         </footer>
-    </div>
     <script src="./functions.js">
     </script>
     </body>

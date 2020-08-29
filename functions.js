@@ -58,6 +58,10 @@ function openPage(x) {
     page = "ospolecnosti.html"
     break;
 
+    case 5:
+    page = "galerie.html"
+    break;
+
     }
 
     location.href = page;
@@ -130,11 +134,63 @@ function myScroll(x) {
     case 11:
     scrollTo = "litepodlahy";
     break;
+
+    case 31:
+    scrollTo = "g01";
+    break;
     
+    case 32:
+    scrollTo = "g02";
+    break;
+
+    case 33:
+    scrollTo = "g03";
+    break;
+
+    case 34:
+    scrollTo = "g04";
+    break;
+
+    case 35:
+    scrollTo = "g05";
+    break;
+
+    case 36:
+    scrollTo = "g06";
+    break;
+
+    case 37:
+    scrollTo = "g07";
+    break;
+
+    case 38:
+    scrollTo = "g08";
+    break;
+
+    case 39:
+    scrollTo = "g09";
+    break;
+
+    case 40:
+    scrollTo = "g10";
+    break;
+
+    case 41:
+    scrollTo = "g11";
+    break;
     }
 
     console.log (scrollTo);
 
     var elmnt = document.getElementById(scrollTo);
     elmnt.scrollIntoView(true);
+}
+
+function toggleMenu() {
+var links = document.getElementById("mainmenu");
+if (links.classList.contains('hiddn') === true) {
+    links.classList.remove('hiddn');
+} else {
+    links.classList.add('hiddn')
+}
 }

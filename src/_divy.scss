@@ -1,54 +1,9 @@
-nav {
-    display: inline-flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: $l;
-    height: 3 * $xl;
-    
-    > menu {
-        //background-image: url("../assets/img/bg3.png");
-        background-color: $graybglight;
-        background-repeat: repeat;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        box-sizing: border-box;
-        box-shadow: 6px 6px 16px rgba(209, 205, 199, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
-        border-radius: 8px;
-        margin-right: $xxl;
-    }
-}
-.main-links ul {
-    list-style-type: none;
-    display: inline-flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    
-    > li {
-        position: relative;
-        padding: $s $l $s $l;
-    }
-    
-}
 .products-sub, .products-sub {
     display: none;
 }
 
-menu {
-    font-size: 1.5rem;
-}
-menu.internalAnchors {
-    font-size: 1rem; 
-}
-.small > menu {
-    font-size: 1rem;
-}
-
 .internalAnchors {
    cursor: pointer;
-    > ul {margin-left: $m;}
     > ul li {
         padding: $m $l;
         list-style-type: none;
@@ -68,20 +23,53 @@ menu.internalAnchors {
 }
 
 .cardsbricks {
-    margin-top: 2*$xl;
-    //background: #EFEEEE;
     background-image: url("../assets/img/bg3.png");
     background-repeat: repeat;
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-sizing: border-box;
     box-shadow: 6px 6px 16px rgba(209, 205, 199, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
     border-radius: 8px;
-    padding-bottom: $xl;
-    padding-top: $xl;
 }
 
-.cards-col {
+.card {
+    background-image: url("../assets/img/bg3.png");
+    background-repeat: repeat;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    box-shadow: 6px 6px 16px rgba(209, 205, 199, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+}
+.cardhome {
+    margin: $s;
+    text-align: center;
+    > h3 {
+        text-align: center;
+    }
+    background-image: url("../assets/img/bg3.png");
+    background-repeat: repeat;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    box-shadow: 6px 6px 16px rgba(209, 205, 199, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    padding: $s;
+    padding-bottom: $xl;
+}
+
+body {
+    background-image: url("../assets/img/bg3.png");
+}
+
+.desc {
+    padding: $m $xl;
+}
+.cards {
     :nth-child(1) {
         margin-top: $s;
     }
 }
+
+#litepodlahy {
+    min-height: 350px;
+}
+
+

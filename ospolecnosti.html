@@ -9,39 +9,50 @@
         <link rel="icon" href="favicon.ico" type="image/ico" sizes="16x16">
     </head>
     <body>
-        <div id="wrapper" class="topShrinked">
-        <nav id="topNav" class="small">
+        <nav id="topNav">
             <div class='logo'>
                 <img src="./assets/img/do-be-ma.png" alt="DOBEMA s.r.o.">
             </div>
+            
             <menu class='main-links'>
-                <ul>
-                    <li><a class='link home' onclick="setTimeout(openPage(0), 1000)" title="Home DOBEMA">Domů</a></li>
-                    <li><a class='link products' onclick="setTimeout(openPage(1), 1000)" title="Produkty DOBEMA">Produkty</a></li>
-                        <!--<ul class='products-sub'>
+                <div id="mainmenu">
+                <a class='link home ' onclick="setTimeout(openPage(0), 1000)" title="Home DOBEMA">Domů</a>
+                <a class='link products' onclick="setTimeout(openPage(1), 1000)"
+                    title="Produkty DOBEMA">Produkty</a>
+                <!--<ul class='products-sub'>
                             <li class='link'>Beton</li>
                             <li class='link'>Cihly porotherm</li>
                         </ul>-->
-                    <li><a class='link services' onclick="setTimeout(openPage(2), 1000)" title="Služby DOBEMA">Služby</a></li>
-                        <!--<ul class='products-sub'>
+                <a class='link services' onclick="setTimeout(openPage(2), 1000)" title="Služby DOBEMA">Služby</a>
+                <!--<ul class='products-sub'>
                             <li class='link'>Předprojektová příprava</li>
                             <li class='link'>Projektování</li>
                             <li class='link'>Realizace staveb</li>
                             <li class='link'>Stavební dozory</li>
                         </ul>-->
-                    <li><a class='link company active' onclick="setTimeout(openPage(4), 1000)" title="O společnosti DOBEMA">Společnost</a></li>
-                    <li><a class='link contact' onclick="setTimeout(openPage(3), 1000)" title="Kontakt DOBEMA">Kontakt</a></li>
-                    <!--<li><button onclick="myZoom()">zoom</button></li>-->
-                </ul>
+                <a class='link company active' onclick="setTimeout(openPage(4), 1000)"
+                    title="O společnosti DOBEMA">Společnost</a>
+    
+                <a class='link galerie' onclick="setTimeout(openPage(5), 1000)"
+                    title="Galerie DOBEMA">Galerie</a>
+                    <a class='link contact' onclick="setTimeout(openPage(3), 1000)" title="Kontakt DOBEMA">Kontakt</a>
+                <!--<li><button onclick="myZoom()">zoom</button></li>-->
+                </div>
+                <button class="smalltogglemenu"  onclick="toggleMenu()">menu</button>
             </menu>
             
+            
+
         </nav>
+        <div class="wrapper">
+       
         
         
-        <div class='content'>
+        <div class='contenthp'>
             <h1>O společnosti</h1>
             
-            <div class="cardcompany">
+            <div class="cardsabout">
+                <div class="cardabout">
                 <p>
                 Firmy FP97 s.r.o. a DOBEMA s.r.o. můžete navštívit v Moravskoslezském kraji v malebném údolí
                 města Jablunkov.</p>
@@ -65,9 +76,9 @@
             </div>
 
             <div class="cardcompanymapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2588.22292121991!2d18.73510011511669!3d49.55581685930094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471413f89d7d6e61%3A0xbb6d277a4329078a!2sJablunkov%201230%2C%20739%2091%20Jablunkov!5e0!3m2!1scs!2scz!4v1597270014360!5m2!1scs!2scz" width="450" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2588.22292121991!2d18.73510011511669!3d49.55581685930094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471413f89d7d6e61%3A0xbb6d277a4329078a!2sJablunkov%201230%2C%20739%2091%20Jablunkov!5e0!3m2!1scs!2scz!4v1597270014360!5m2!1scs!2scz" width="auto" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
-        
+        </div>
         </div>
         <footer>
             <p>&copy; 2020 DOBEMA s.r.o.</p>

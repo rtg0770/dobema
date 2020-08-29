@@ -9,41 +9,49 @@
         <link rel="icon" href="favicon.ico" type="image/ico" sizes="16x16">
     </head>
     <body>
-        <div id="wrapper" class="topShrinked">
-        <nav id="topNav" class="small">
+        <nav id="topNav">
             <div class='logo'>
                 <img src="./assets/img/do-be-ma.png" alt="DOBEMA s.r.o.">
             </div>
+            
             <menu class='main-links'>
-                <ul>
-                    <li><a class='link home' onclick="setTimeout(openPage(0), 1000)" title="Home DOBEMA">Domů</a></li>
-                    <li><a class='link products' onclick="setTimeout(openPage(1), 1000)" title="Produkty DOBEMA">Produkty</a></li>
-                        <!--<ul class='products-sub'>
+                <div id="mainmenu">
+                <a class='link home ' onclick="setTimeout(openPage(0), 1000)" title="Home DOBEMA">Domů</a>
+                <a class='link products' onclick="setTimeout(openPage(1), 1000)"
+                    title="Produkty DOBEMA">Produkty</a>
+                <!--<ul class='products-sub'>
                             <li class='link'>Beton</li>
                             <li class='link'>Cihly porotherm</li>
                         </ul>-->
-                    <li><a class='link services active' onclick="setTimeout(openPage(2), 1000)" title="Služby DOBEMA">Služby</a></li>
-                        <!--<ul class='products-sub'>
+                <a class='link services active' onclick="setTimeout(openPage(2), 1000)" title="Služby DOBEMA">Služby</a>
+                <!--<ul class='products-sub'>
                             <li class='link'>Předprojektová příprava</li>
                             <li class='link'>Projektování</li>
                             <li class='link'>Realizace staveb</li>
                             <li class='link'>Stavební dozory</li>
                         </ul>-->
-                    <li><a class='link company' onclick="setTimeout(openPage(4), 1000)" title="O společnosti DOBEMA">Společnost</a></li>
-                    <li><a class='link contact' onclick="setTimeout(openPage(3), 1000)" title="Kontakt DOBEMA">Kontakt</a></li>
-                    <!--<li><button onclick="myZoom()">zoom</button></li>-->
-                </ul>
+                <a class='link company' onclick="setTimeout(openPage(4), 1000)"
+                    title="O společnosti DOBEMA">Společnost</a>
+    
+                <a class='link galerie' onclick="setTimeout(openPage(5), 1000)"
+                    title="Galerie DOBEMA">Galerie</a>
+                    <a class='link contact' onclick="setTimeout(openPage(3), 1000)" title="Kontakt DOBEMA">Kontakt</a>
+                <!--<li><button onclick="myZoom()">zoom</button></li>-->
+                </div>
+                <button class="smalltogglemenu"  onclick="toggleMenu()">menu</button>
             </menu>
             
+            
+
         </nav>
+        <div class="wrapper" class="topShrinked">
         
         
-        <div class='content'>
-            <h1>Služby</h1>
+            
             <menu class="internalAnchors">
                 
                 <ul>
-                    <h3>Služby</h3>
+                    <li><strong>Služby</strong></li>
                     <li>
                         <a class="link" onclick="myScroll(0)">Předprojektová příprava</a>
                     </li>
@@ -63,10 +71,11 @@
                   
                 </ul>
             </menu>
+            <div class='content'>
             
-            <div class="cards-col">
-            
-            <div class='cardsbricks' id="01predprojektovapriprava">
+            <div class="cards">
+            <h1>Služby</h1>
+            <div class='card' id="01predprojektovapriprava">
                 <img class="prodimg" alt="Předprojektová příprava" src="assets/img/sluzby/predprojektova.jpg">       
                 <div class="desc">
                 <h2>Předprojektová příprava</h2>
@@ -87,8 +96,8 @@
                     </ol>
                 </div>
             </div>
-            <div class='cardsbricks' id="02projektovani">
-                <img class="prodimg" src="assets/img/sluzby/novos.png" alt="Razitko">
+            <div class='card' id="02projektovani">
+                <img class="prodimg" src="assets/img/sluzby/razitko.jpg" alt="Razitko">
                 <div class="desc">
                 <h2>Projekty pozemních staveb a služby projektanta</h2>
                 <ul>
@@ -115,7 +124,7 @@
                 </ul>
                 </div>
             </div>
-            <div class='cardsbricks' id="03realizacestaveb">
+            <div class='card' id="03realizacestaveb">
                 <img class="prodimg" src="assets/img/sluzby/realizace1.jpg" alt="Realizace">
                 
                 <div class="desc">
@@ -125,7 +134,7 @@
                 Pro své zákazníky jsme připravení nabídnout komplexní servis, počínaje zpracováním projektové dokumentace, vyřízením administrativních nezbytností přes výstavbu až po předání hotové stavby včetně jejího úklidu.</p>
                 </div>
             </div>
-            <div class='cardsbricks' id="04stavebnidozory">
+            <div class='card' id="04stavebnidozory">
                 <img class="prodimg" src="assets/img/sluzby/stavba.jpg" alt="Razitko">
                 <div class="desc">
                 <h2>Stavební dozory pozemních staveb</h2>

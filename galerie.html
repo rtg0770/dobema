@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOBEMA, galerie</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <meta charset="UTF-8">
+        <meta name="robots" content="dobema galerie, galerie dobema s.r.o., stavaři jablunkov, stavebni firmy beskydy" />
+        <meta name="description" content="Galerie - DOBEMA s.r.o., Vaši stavaři." />
+        <link rel="icon" href="favicon.ico" type="image/ico" sizes="16x16">
+    </head>
+    <body>
+        <nav id="topNav">
+            <div class='logo'>
+                <img src="./assets/img/do-be-ma.png" alt="DOBEMA s.r.o.">
+            </div>
+            
+            <menu class='main-links'>
+                <div id="mainmenu">
+                <a class='link home ' onclick="setTimeout(openPage(0), 1000)" title="Home DOBEMA">Domů</a>
+                <a class='link products' onclick="setTimeout(openPage(1), 1000)"
+                    title="Produkty DOBEMA">Produkty</a>
+                <!--<ul class='products-sub'>
+                            <li class='link'>Beton</li>
+                            <li class='link'>Cihly porotherm</li>
+                        </ul>-->
+                <a class='link services ' onclick="setTimeout(openPage(2), 1000)" title="Služby DOBEMA">Služby</a>
+                <!--<ul class='products-sub'>
+                            <li class='link'>Předprojektová příprava</li>
+                            <li class='link'>Projektování</li>
+                            <li class='link'>Realizace staveb</li>
+                            <li class='link'>Stavební dozory</li>
+                        </ul>-->
+                <a class='link company' onclick="setTimeout(openPage(4), 1000)"
+                    title="O společnosti DOBEMA">Společnost</a>
+    
+                <a class='link galerie active' onclick="setTimeout(openPage(5), 1000)"
+                    title="Galerie DOBEMA">Galerie</a>
+                    <a class='link contact' onclick="setTimeout(openPage(3), 1000)" title="Kontakt DOBEMA">Kontakt</a>
+                <!--<li><button onclick="myZoom()">zoom</button></li>-->
+                </div>
+                <button class="smalltogglemenu"  onclick="toggleMenu()">menu</button>
+            </menu>
+            
+            
+
+        </nav>
+        <div class="wrapper">
+        
+        
+            
+            <menu class="internalAnchors">
+                <ol>
+                    <strong>Galerie</strong>
+                    <li>
+                        <a class="link" onclick="myScroll(31)">Projekt novostavby RD s provozovnou autodílny v Dolní Lomné</a>
+                    </li>
+
+                    <li>
+                        <a class="link" onclick="myScroll(32)">Projekt novostavby RD Jablunkov Lísky</a>
+                    </li>
+
+                    <li>
+                        <a class="link" onclick="myScroll(33)">Dělení pozemku Lohenice</a>
+                    </li>
+
+                    <li>
+                        <a class="link" onclick="myScroll(34)">Rekonstrukce budovy č.p 1063</a>
+                    </li>    
+                    
+                    <li>
+                        <a class="link" onclick="myScroll(35)">Vyřízení dotace modrá úsporám - 8 žádosti rok 2020</a>
+                    </li> 
+                    
+                    <li>
+                        <a class="link" onclick="myScroll(36)">Stavební dozor - panelový dům Třinec</a>
+                    </li>
+
+                    <li>
+                        <a class="link" onclick="myScroll(37)">Projekt novostavby RD, Petřvald u Karviné YTONG</a>
+                    </li>
+
+                    <li>
+                        <a class="link" onclick="myScroll(38)">Stavební dozor - revitalizace střechy</a>
+                    </li>
+
+                    <li>
+                        <a class="link" onclick="myScroll(39)">Projekt dřevostavby, Milíkov</a>
+                    </li>
+
+                    <li>
+                        <a class="link" onclick="myScroll(40)">Projekt e4 dům Porotherm, Mistřovice Český Těšín</a>
+                    </li>
+
+                    <li>
+                        <a class="link" onclick="myScroll(41)">Bytový dům Jablunkov </a>
+                    </li>
+                </ol>
+            </menu>
+            <div class='contentgalerie'>
+            
+            <div class="cards">
+            <h1>Galerie</h1>
+                <div class='cardgal' id="g01">
+                    <img class="galimg" alt="1. Projekt novostavby RD s provozovnou autodílny v Dolní Lomné" src="./assets/img/galerie/autodilna-1.png">       
+    
+                </div>
+                <div class='cardgal' id="g02">
+                    <img class="galimg" alt="2. Projekt novostavby RD Jablunkov Lísky" src="./assets/img/galerie/novostavba-lisky-1.png">
+                </div>
+                <div class='cardgal' id="g03">
+                    <img class="galimg" alt="3. Dělení pozemku Lohenice" src="./assets/img/galerie/lohenice_katastralni_vykres-1.png">
+                </div>
+                <div class='cardgal' id="g04">
+                    <img class="galimg" alt="4. Rekonstrukce budovy č.p 1063" src="./assets/img/galerie/rekonstrukce-1063-1.png">
+                </div>
+                <div class='cardgal' id="g05">
+                    <img class="galimg" alt="5.	Vyřízení dotace modrá úsporám - 8 žádosti rok 2020" src="./assets/img/galerie/destovka.png">
+                </div>
+                <div class='cardgal' id="g06">
+                    <img class="galimg" alt="6.	Stavební dozor - panelový dům Třinec" src="">
+                </div>
+                <div class='cardgal' id="g07">
+                    <img class="galimg" alt="7. Projekt novostavby RD, Petřvald u Karviné YTONG" src="./assets/img/galerie/petrvald-u-karvine-1.png">
+                </div>
+                <div class='cardgal' id="g08">
+                    <img class="galimg" alt="8. Stavební dozor - revitalizace střechy" src="./assets/img/galerie/revitalizace-strechy-dozor.jpg">
+                </div>
+                <div class='cardgal' id="g09">
+                    <img class="galimg" alt="9.	Projekt dřevostavby, Milíkov" src="./assets/img/galerie/drevostavby-pud-1.png">       
+                </div>
+                <div class='cardgal' id="g10">
+                    <img class="galimg" alt="10. Projekt e4 dům Porotherm, Mistřovice Český Těšín" src="">
+                </div>
+                <div class='cardgal' id="g11">
+                    <img class="galimg" alt="11. Bytový dům Jablunkov " src="./assets/img/galerie/bytovka-jablunkov-1.png">       
+                   
+                </div>
+            </div>
+
+            </div>
+
+        </div>
+        <footer>
+            <p>&copy; 2020 DOBEMA s.r.o.</p>
+        </footer>
+    </div>
+        <script src="./functions.js">
+        </script>
+    </body>
+</html>
