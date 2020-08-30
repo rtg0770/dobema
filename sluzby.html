@@ -12,37 +12,18 @@
     <body>
         <nav id="topNav">
             <div class='logo'>
-                <img src="./assets/img/do-be-ma.png" alt="DOBEMA s.r.o.">
+                <img onclick="setTimeout(openPage(0), 1000)" src="./assets/img/do-be-ma.png" alt="DOBEMA s.r.o.">
             </div>
             
             <menu class='main-links'>
-                <div id="mainmenu">
-                <a class='link home ' onclick="setTimeout(openPage(0), 1000)" title="Home DOBEMA">Domů</a>
-                <a class='link products' onclick="setTimeout(openPage(1), 1000)"
-                    title="Produkty DOBEMA">Produkty</a>
-                <!--<ul class='products-sub'>
-                            <li class='link'>Beton</li>
-                            <li class='link'>Cihly porotherm</li>
-                        </ul>-->
-                <a class='link services active' onclick="setTimeout(openPage(2), 1000)" title="Služby DOBEMA">Služby</a>
-                <!--<ul class='products-sub'>
-                            <li class='link'>Předprojektová příprava</li>
-                            <li class='link'>Projektování</li>
-                            <li class='link'>Realizace staveb</li>
-                            <li class='link'>Stavební dozory</li>
-                        </ul>-->
-                <a class='link company' onclick="setTimeout(openPage(4), 1000)"
-                    title="O společnosti DOBEMA">Společnost</a>
-    
-                <a class='link galerie' onclick="setTimeout(openPage(5), 1000)"
-                    title="Galerie DOBEMA">Galerie</a>
-                    <a class='link contact' onclick="setTimeout(openPage(3), 1000)" title="Kontakt DOBEMA">Kontakt</a>
-                <!--<li><button onclick="myZoom()">zoom</button></li>-->
-                </div>
-                <button class="smalltogglemenu"  onclick="toggleMenu()">menu</button>
+                <!--<button class='home active' onclick="setTimeout(openPage(0), 1000)" title="Home DOBEMA"></button>-->
+                <button class='products' onclick="setTimeout(openPage(1), 1000)" title="Produkty DOBEMA"></button>
+                <button class='services' onclick="setTimeout(openPage(2), 1000)" title="Služby DOBEMA"></button>
+                <button class='company' onclick="setTimeout(openPage(4), 1000)"
+                    title="O společnosti DOBEMA"></button>
+                <button class='galerie' onclick="setTimeout(openPage(5), 1000)" title="Galerie DOBEMA"></button>
+                <button class='contact' onclick="setTimeout(openPage(3), 1000)" title="Kontakt DOBEMA"></button>
             </menu>
-            
-            
 
         </nav>
         <div class="wrapper" class="topShrinked">

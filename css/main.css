@@ -51,6 +51,42 @@ a.link:hover {
 .contactinfo ul li {
   list-style-type: none; }
 
+.home {
+  display: block;
+  background-image: url(../assets/img/icons/home.svg);
+  width: 48px;
+  height: 48px; }
+
+.products {
+  display: block;
+  background-image: url(../assets/img/icons/porotherm.svg);
+  width: 48px;
+  height: 48px; }
+
+.services {
+  display: block;
+  background-image: url(../assets/img/icons/sluzby.svg);
+  width: 48px;
+  height: 48px; }
+
+.company {
+  display: block;
+  background-image: url(../assets/img/icons/home.svg);
+  width: 48px;
+  height: 48px; }
+
+.galerie {
+  display: block;
+  background-image: url(../assets/img/icons/galerie.svg);
+  width: 48px;
+  height: 48px; }
+
+.contact {
+  display: block;
+  background-image: url(../assets/img/icons/kontakt.svg);
+  width: 48px;
+  height: 48px; }
+
 .products-sub, .products-sub {
   display: none; }
 
@@ -110,6 +146,9 @@ body {
 #litepodlahy {
   min-height: 350px; }
 
+.logo:hover {
+  cursor: pointer; }
+
 html {
   scroll-behavior: smooth;
   scroll-padding: 100px 0px 0px 100px; }
@@ -122,6 +161,7 @@ html {
 #topNav {
   position: fixed;
   display: grid;
+  width: 100%;
   grid-auto-columns: 5fr 7fr;
   grid-template-areas: "logos menu"; }
 
@@ -133,7 +173,11 @@ html {
 menu.main-links {
   padding: unset;
   grid-area: menu;
-  height: unset; }
+  height: unset;
+  justify-items: end; }
+
+.main-links > button {
+  margin-right: 32px; }
 
 a.link {
   padding: 8px 24px; }
@@ -273,18 +317,8 @@ menu.internalAnchors > ul {
 
 .main-links {
   display: grid;
-  background-color: rgba(239, 238, 238, 0.8);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-sizing: border-box;
-  box-shadow: 6px 6px 16px rgba(209, 205, 199, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
-  border-radius: 8px;
-  padding: 24px 32px; }
-  .main-links > a {
-    display: block;
-    width: 300px; }
-  @media (min-width: 992px) {
-    .main-links {
-      display: grid; } }
+  grid-auto-flow: column;
+  grid-gap: 4px; }
 
 .smalltogglemenu {
   display: block; }

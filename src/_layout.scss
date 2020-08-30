@@ -13,6 +13,7 @@ html {
 #topNav {
     position: fixed;
     display: grid;
+    width: 100%;
     grid-auto-columns: 5fr 7fr;
     grid-template-areas:
     "logos menu";
@@ -29,8 +30,11 @@ menu.main-links {
     padding: unset;
     grid-area: menu;
     height: unset;
+    justify-items: end;
 }
-
+.main-links > button {
+    margin-right: $xl;
+}
 a.link {
     padding: $m $l;
 }
@@ -82,10 +86,10 @@ a.link {
     grid-template-areas: "img" "desc";
     grid-auto-columns: 1fr;
 
-   @include respond-to(medium) {
+@include respond-to(medium) {
     grid-template-areas: "img desc";
     grid-auto-columns: 4fr 8fr;
-        min-height: 200px;
+    min-height: 200px;
 }
 @include respond-to(large) {
     grid-template-areas: "img desc";
@@ -202,20 +206,8 @@ menu.internalAnchors {
 
 .main-links {
     display: grid;
-    background-color: rgba($color: $graybglight, $alpha: 0.8);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-sizing: border-box;
-    box-shadow: 6px 6px 16px rgba(209, 205, 199, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
-    border-radius: 8px;
-    padding: $l $xl;
-    > a {
-        display: block;
-        width: 300px;
-    }
-    @include respond-to(medium) {
-    display: grid;
-    
-}
+    grid-auto-flow: column;
+    grid-gap: $s;
 }
 
 
