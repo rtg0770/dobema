@@ -1,12 +1,4 @@
-button {
-background: #EFEEEE;
-border: 1px solid rgba(255, 255, 255, 0.2);
-box-sizing: border-box;
-box-shadow: 6px 6px 16px rgba(209, 205, 199, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
-border-radius: 8px;
-padding: $m $l;
 
-}
 h3:hover, .cardshome {
     cursor: pointer;
 }
@@ -35,9 +27,11 @@ a.link:hover {
     text-decoration: underline;
 }
 .goservice {
-    background-color: rgba($color: $green, $alpha: 0.3);
-    padding: $m $l;
+    background-color: rgba($color: $green, $alpha: 1.0);
+    color: $graybglight;
+    padding: $m $xxl;
     margin: auto;
+    border-radius: 8px;
 }
 .indeximg {
     display: block;
@@ -55,36 +49,66 @@ a.link:hover {
 .home {
     display: block;
     background-image: url(../assets/img/icons/home.svg);
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+    @include respond-to(medium) {
     width: 48px;
-    height: 48px;
+    height: 48px;    
+    }
 }
 .products {
     display: block;
     background-image: url(../assets/img/icons/porotherm.svg);
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+    @include respond-to(medium) {
     width: 48px;
     height: 48px;
+    }
 }
 .services {
     display: block;
     background-image: url(../assets/img/icons/sluzby.svg);
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+    @include respond-to(medium) {    
     width: 48px;
     height: 48px;
+    }
 }
 .company {
     display: block;
     background-image: url(../assets/img/icons/home.svg);
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+    @include respond-to(medium) {
     width: 48px;
-    height: 48px;
+    height: 48px;    
+    }
 }
 .galerie {
     display: block;
     background-image: url(../assets/img/icons/galerie.svg);
+    background-size: cover;
+    width: 64px;
+    height: 64px;
+    @include respond-to(medium) {
     width: 48px;
     height: 48px;
+    }
 }
 .contact {
     display: block;
     background-image: url(../assets/img/icons/kontakt.svg);
+    background-size: cover;
+    width: 64px;
+    height: 64px;
+    @include respond-to(medium) {
     width: 48px;
     height: 48px;
+    }
 }

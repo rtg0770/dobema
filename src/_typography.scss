@@ -18,6 +18,7 @@ h2 {
 h3, h4 {
     color: rgba($color: $green, $alpha: 0.8);
     @include font-size(1.8rem);
+    line-height: 2rem;
 }
 
 html {
@@ -27,15 +28,15 @@ html {
 
 p {
     text-align: justify;
-    line-height: 1.5rem;
-    padding: $s $m;
+    line-height: 1.3rem;
+    padding: $m $xl;
 
     @include respond-to(medium) {
-    padding: $m $l;
+    padding: $m $xl;
     }
 
     @include respond-to(large) {
-    padding: $m $l;
+    padding: $l $xl;
     }
 }
 

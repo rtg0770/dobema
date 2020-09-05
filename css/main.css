@@ -3,14 +3,6 @@ body {
   color: #6d6d6c;
   background-color: #efeeee; }
 
-button {
-  background: #EFEEEE;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-sizing: border-box;
-  box-shadow: 6px 6px 16px rgba(209, 205, 199, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
-  border-radius: 8px;
-  padding: 8px 24px; }
-
 h3:hover, .cardshome {
   cursor: pointer; }
 
@@ -37,9 +29,11 @@ a.link:hover {
   text-decoration: underline; }
 
 .goservice {
-  background-color: rgba(29, 185, 84, 0.3);
-  padding: 8px 24px;
-  margin: auto; }
+  background-color: #1db954;
+  color: #efeeee;
+  padding: 8px 64px;
+  margin: auto;
+  border-radius: 8px; }
 
 .indeximg {
   display: block;
@@ -54,38 +48,68 @@ a.link:hover {
 .home {
   display: block;
   background-image: url(../assets/img/icons/home.svg);
-  width: 48px;
-  height: 48px; }
+  width: 64px;
+  height: 64px;
+  background-size: cover; }
+  @media (min-width: 992px) {
+    .home {
+      width: 48px;
+      height: 48px; } }
 
 .products {
   display: block;
   background-image: url(../assets/img/icons/porotherm.svg);
-  width: 48px;
-  height: 48px; }
+  width: 64px;
+  height: 64px;
+  background-size: cover; }
+  @media (min-width: 992px) {
+    .products {
+      width: 48px;
+      height: 48px; } }
 
 .services {
   display: block;
   background-image: url(../assets/img/icons/sluzby.svg);
-  width: 48px;
-  height: 48px; }
+  width: 64px;
+  height: 64px;
+  background-size: cover; }
+  @media (min-width: 992px) {
+    .services {
+      width: 48px;
+      height: 48px; } }
 
 .company {
   display: block;
   background-image: url(../assets/img/icons/home.svg);
-  width: 48px;
-  height: 48px; }
+  width: 64px;
+  height: 64px;
+  background-size: cover; }
+  @media (min-width: 992px) {
+    .company {
+      width: 48px;
+      height: 48px; } }
 
 .galerie {
   display: block;
   background-image: url(../assets/img/icons/galerie.svg);
-  width: 48px;
-  height: 48px; }
+  background-size: cover;
+  width: 64px;
+  height: 64px; }
+  @media (min-width: 992px) {
+    .galerie {
+      width: 48px;
+      height: 48px; } }
 
 .contact {
   display: block;
   background-image: url(../assets/img/icons/kontakt.svg);
-  width: 48px;
-  height: 48px; }
+  background-size: cover;
+  width: 64px;
+  height: 64px; }
+  @media (min-width: 992px) {
+    .contact {
+      width: 48px;
+      height: 48px; } }
 
 .products-sub, .products-sub {
   display: none; }
@@ -177,7 +201,9 @@ menu.main-links {
   justify-items: end; }
 
 .main-links > button {
-  margin-right: 32px; }
+  margin-right: 32px;
+  border-radius: 4px;
+  border-color: #1DB954; }
 
 a.link {
   padding: 8px 24px; }
@@ -236,7 +262,7 @@ a.link {
   box-sizing: border-box;
   box-shadow: 6px 6px 16px rgba(209, 205, 199, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
   border-radius: 8px;
-  padding: 24px 32px; }
+  padding: 8px; }
 
 .prodimg {
   grid-area: img;
@@ -315,10 +341,8 @@ menu.internalAnchors > ul {
       grid-auto-columns: 1fr 1fr 1fr 1fr;
       grid-template-areas: "col1 col2 col3 col4"; } }
 
-.main-links {
-  display: grid;
-  grid-auto-flow: column;
-  grid-gap: 4px; }
+.main-links > button {
+  display: inline-block; }
 
 .smalltogglemenu {
   display: block; }
@@ -353,7 +377,8 @@ h2 {
 
 h3, h4 {
   color: rgba(29, 185, 84, 0.8);
-  font-size: calc(1.305rem + 0.66vw); }
+  font-size: calc(1.305rem + 0.66vw);
+  line-height: 2rem; }
   @media (min-width: 1200px) {
     h3, h4 {
       font-size: 1.8rem; } }
@@ -364,14 +389,14 @@ html {
 
 p {
   text-align: justify;
-  line-height: 1.5rem;
-  padding: 4px 8px; }
+  line-height: 1.3rem;
+  padding: 8px 32px; }
   @media (min-width: 992px) {
     p {
-      padding: 8px 24px; } }
+      padding: 8px 32px; } }
   @media (min-width: 1200px) {
     p {
-      padding: 8px 24px; } }
+      padding: 24px 32px; } }
 
 .desc ul li {
   line-height: 2rem; }

@@ -34,6 +34,8 @@ menu.main-links {
 }
 .main-links > button {
     margin-right: $xl;
+    border-radius: $s;
+    border-color: $green;
 }
 a.link {
     padding: $m $l;
@@ -104,7 +106,7 @@ a.link {
     box-sizing: border-box;
     box-shadow: 6px 6px 16px rgba(209, 205, 199, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
     border-radius: 8px;
-    padding: $l $xl;
+    padding: $m;
 }
 
 .prodimg {
@@ -204,11 +206,9 @@ menu.internalAnchors {
 
 }
 
-.main-links {
-    display: grid;
-    grid-auto-flow: column;
-    grid-gap: $s;
-}
+.main-links > button {
+    display: inline-block;
+    }
 
 
 .smalltogglemenu {
